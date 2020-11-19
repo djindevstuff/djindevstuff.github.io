@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="h">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grandmaster Crystal</title>
+    <link rel="perconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@450&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: rgb(61, 61, 61);
+            font-family: "Fira Code",monospace;
+            font-size: 20px;
+        }
+        g{
+            color: rgb(97, 37, 194);
+            background-color: rgb(0, 0, 0) !important;
+        }
+        p{
+            color:rgb(230, 230, 230);
+            background-color: rgb(61, 61, 61) !important;
+        }
+        h2{
+            padding-left: 70px;
+            padding-right: 70px;
+            padding-bottom: 25px;
+            padding-top: 25px;
+            color:rgb(250, 157, 18);
+            background-color: rgb(61, 61, 61) !important;
+        }
+        .gm{
+            text-align: center;
+        }
+        button {        
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-family: "Fira Code",monospace;
+            font-size: 20px;
+            border-color: rgba(0, 0, 0, 0);
+            border: 2px solid;
+            background-color: rgba(0, 0, 0, 0);
+            color: rgb(206, 206, 206);
+            border-radius: 5px;
+            margin-bottom: 7px;
+            outline: none;
+        }
+        button:active{
+            transform: scale(0.98);
+            background-color: rgb(105, 105, 105);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="gm">
+        <script>
+            var threeGmCount=0;
+            var fourGmCount=0;
+            var fourNexGmCount=0;
+            var fiveGmCount=0;
+            var fiveNexGmCount=0;
+            var totalGmCount=0;
+            var r=0;
+            function openGmCrystal(x){
+                for(var i=0;i<x;i++){
+                    n=Math.random();
+                    if(n>=0.0 && n<0.006){
+                        fiveNexGmCount+=1;
+                    }
+                    else if(n>=0.006 && n<0.03){
+                        fiveGmCount+=1;
+                    }
+                    else if(n>=0.03 && n<0.06){
+                        fourNexGmCount+=1;
+                    }
+                    else if(n>=0.06 && n<0.18){
+                        fourGmCount+=1;
+                    }
+                    else{
+                        threeGmCount+=1;
+                    }
+                    totalGmCount=threeGmCount+fourGmCount+fourNexGmCount+fiveGmCount+fiveNexGmCount;
+                }
+                document.getElementById("countGmTotal").innerHTML = totalGmCount;
+                document.getElementById("countGmThree").innerHTML = threeGmCount;
+                document.getElementById("countGmFour").innerHTML = fourGmCount;
+                document.getElementById("countGmFourNex").innerHTML = fourNexGmCount;
+                document.getElementById("countGmFive").innerHTML = fiveGmCount;
+                document.getElementById("countGmFiveNex").innerHTML = fiveNexGmCount;
+            }
+            function clearWindow(){
+                totalGmCount=0;
+                threeGmCount=0;
+                fourGmCount=0;
+                fourNexGmCount=0;
+                fiveGmCount=0;
+                fiveNexGmCount=0;
+                document.getElementById("countGmTotal").innerHTML = totalGmCount;
+                document.getElementById("countGmThree").innerHTML = threeGmCount;
+                document.getElementById("countGmFour").innerHTML = fourGmCount;
+                document.getElementById("countGmFourNex").innerHTML = fourNexGmCount;
+                document.getElementById("countGmFive").innerHTML = fiveGmCount;
+                document.getElementById("countGmFiveNex").innerHTML = fiveNexGmCount;
+            }
+        </script>
+        <h2>Grandmaster Crystal</h2>
+        <p>Total Crystals= <a id="countGmTotal">0</a></p>
+        <p>3 Stars= <a id="countGmThree">0</a></p>
+        <p>4 Stars= <a id="countGmFour">0</a></p>
+        <p>4 Star Nexus= <a id="countGmFourNex">0</a></p>
+        <p>5 Stars= <a id="countGmFive">0</a></p>
+        <p>5 Star Nexus= <a id="countGmFiveNex">0</a></p>
+        <button type="button" id="open1Crystal" onclick="openGmCrystal(1)">OPEN 1</button>
+        <button type="button" id="open10Crystal" onclick="openGmCrystal(10)">OPEN 10</button>
+        <button type="button" id="open100Crystal" onclick="openGmCrystal(100)">OPEN 100</button>
+        <button type="button" id="open1000Crystal" onclick="openGmCrystal(1000)">OPEN 1000</button>
+        <button type="button" id="clear" onclick="clearWindow()">CLEAR</button>
+    </div>
+</body>
+</html>
