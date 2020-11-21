@@ -37,8 +37,7 @@ Darkhawk
 Deadpool (X-Force)  
 Diablo  
 Doctor Doom
-Doctor Octopus  
-Doctor Strange  
+Doctor Octopus
 Doctor Voodoo  
 Domino  
 Dormammu  
@@ -112,7 +111,6 @@ Omega Red
 Phoenix
 Proxima Midnight  
 Psylocke  
-Punisher  
 Punisher 2099  
 Quake  
 Red Goblin
