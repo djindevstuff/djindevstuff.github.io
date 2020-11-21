@@ -16,7 +16,7 @@ function readFile(file){
     f.send(null);
 }
 function readFi(){
-    readFile("champs.txt");
+    readFile("../res/champs.txt");
 }
 function randomInt(min,max){
     return Math.floor(Math.random()*(max-min+1))+min;
