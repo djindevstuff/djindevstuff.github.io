@@ -13,10 +13,6 @@
             font-family: "Fira Code";
             font-size: 20px;
         }
-        g{
-            color: rgb(97, 37, 194);
-            background-color: rgb(0, 0, 0) !important;
-        }
         p{
             color:rgb(230, 230, 230);
             background-color: rgb(61, 61, 61) !important;
@@ -50,6 +46,12 @@
         button:active{
             transform: scale(0.98);
             background-color: rgb(105, 105, 105);
+        }
+        footer{
+            
+            font-family: "Fira Code";
+            font-size: 14px;
+            color: rgb(206, 206, 206);
         }
     </style>
 </head>
@@ -86,13 +88,14 @@
         </script>
         <h2>Login Crystal</h2>
         <p>Total Crystals= <a id="countTotal">0</a></p>
-        <p>3 Stars= <a id="countThree">0</a></p>
-        <p>4 Stars= <a id="countFour">0</a></p>
+        <p>3/4 Stars= <a id="countThree">0</a></p>
+        <p>4/5 Stars= <a id="countFour">0</a></p>
         <button type="button" id="open1Crystal" onclick="openCrystal(1)">OPEN 1</button>
         <button type="button" id="open10Crystal" onclick="openCrystal(10)">OPEN 10</button>
         <button type="button" id="open100Crystal" onclick="openCrystal(100)">OPEN 100</button>
         <button type="button" id="open1000Crystal" onclick="openCrystal(1000)">OPEN 1000</button>
         <button type="button" id="clear" onclick="clearWindow()">CLEAR</button>
+        <footer><b>NOTE:</b> Login Crystal drop rates are assumed.<br>2% chance for 4/5 Star.</footer>
     </div>
 </body>
 </html>
