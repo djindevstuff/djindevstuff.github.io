@@ -64,7 +64,7 @@
         }
     </style>
 </head>
-<body onload="readFi()">
+<body onload="read5Star()">
     <div class="fiveStar">
         <script>
             var totalCount=0;
@@ -88,8 +88,8 @@
                 }
                 f.send(null);
             }
-            function readFi(){
-                readFile("champs.txt");
+            function read5Star(){
+                readFile("champs5.txt");
             }
             function randomInt(min,max){
                 return Math.floor(Math.random()*(max-min+1))+min;

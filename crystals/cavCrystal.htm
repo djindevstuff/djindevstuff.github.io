@@ -53,10 +53,10 @@
         }
     </style>
 </head>
-<body onload="readFi()">
+<body onload="read56Star()">
     
     <div class="cavalier">
-        <script type="text/javascript" src="champPull.js"></script>
+        <script type="text/javascript" src="champ56Pull.js"></script>
         <script>
             var threeCavCount=0;
             var fourCavCount=0;
@@ -76,7 +76,7 @@
                     }
                     else if(n>=0.002 && n<0.01){
                         sixCavCount+=1;
-                        addchmp=getChamp(1);
+                        addchmp=get6Champ(1);
                         hist= document.getElementById("showChamp").innerHTML;
                         document.getElementById("showChamp").innerHTML="6* "+addchmp+"<br>"+hist;
                     }
@@ -85,7 +85,7 @@
                     }
                     else if(n>=0.032 && n<0.12){
                         fiveCavCount+=1;
-                        addchmp=getChamp(1);
+                        addchmp=get5Champ(1);
                         hist= document.getElementById("showChamp").innerHTML;
                         document.getElementById("showChamp").innerHTML="5* "+addchmp+"<br>"+hist;
                     }
