@@ -53,9 +53,10 @@
         }
     </style>
 </head>
-<body>
+<body onload="readFi()">
     
     <div class="gm">
+        <script type="text/javascript" src="champPull.js"></script>
         <script>
             var threeGmCount=0;
             var fourGmCount=0;
@@ -64,6 +65,7 @@
             var fiveNexGmCount=0;
             var totalGmCount=0;
             var r=0;
+            var addchmp;
             function openGmCrystal(x){
                 for(var i=0;i<x;i++){
                     n=Math.random();
@@ -72,6 +74,9 @@
                     }
                     else if(n>=0.006 && n<0.03){
                         fiveGmCount+=1;
+                        addchmp=getChamp(1);
+                        hist= document.getElementById("showChamp").innerHTML;
+                        document.getElementById("showChamp").innerHTML="5* "+addchmp+"<br>"+hist;
                     }
                     else if(n>=0.03 && n<0.06){
                         fourNexGmCount+=1;
@@ -104,6 +109,7 @@
                 document.getElementById("countGmFourNex").innerHTML = fourNexGmCount;
                 document.getElementById("countGmFive").innerHTML = fiveGmCount;
                 document.getElementById("countGmFiveNex").innerHTML = fiveNexGmCount;
+                document.getElementById("showChamp").innerHTML="";
             }
         </script>
         <h2>Grandmaster Crystal</h2>
@@ -116,8 +122,8 @@
         <button type="button" id="open1Crystal" onclick="openGmCrystal(1)">OPEN 1</button>
         <button type="button" id="open10Crystal" onclick="openGmCrystal(10)">OPEN 10</button>
         <button type="button" id="open100Crystal" onclick="openGmCrystal(100)">OPEN 100</button>
-        <button type="button" id="open1000Crystal" onclick="openGmCrystal(1000)">OPEN 1000</button>
         <button type="button" id="clear" onclick="clearWindow()">CLEAR</button>
+        <p><a id="showChamp"></a></p>
     </div>
 </body>
 </html>
