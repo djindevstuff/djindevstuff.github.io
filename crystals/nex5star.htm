@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>5 Star Crystal</title>
+    <title>Nexus 5*</title>
     <link rel="perconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@450&display=swap" rel="stylesheet">
     <style>
@@ -75,12 +75,11 @@
         <script>
             var totalCount=0;
             var champ;
-            var pull=[10];
+            var champNex=[3];
+            var r=[3];
             var res;
-            var r;
-            var nl=0;
+            var x;
             var hist="";
-            var curpulls="";
             function readFile(file){
                 var f = new XMLHttpRequest();
                 f.open("GET", file, true);
@@ -100,28 +99,28 @@
             function randomInt(min,max){
                 return Math.floor(Math.random()*(max-min+1))+min;
             }
+            function getChamp(len){
+                r[0]=randomInt(0,len);
+                r[1]=randomInt(0,len);
+                r[2]=randomInt(0,len);
+                while(r[0]==r[1]){
+                    r[1]=randomInt(0,len);
+                }
+                while(r[2]==r[0] || r[2]==r[1]){
+                    r[2]=randomInt(0,len);
+                }
+                champNex[0] = champ[r[0]];
+                champNex[1] = champ[r[1]];
+                champNex[2] = champ[r[2]]; 
+            }
             function open1Crystal(n){
                 for(var i=0;i<n;i++){
-                    r=randomInt(0,champ.length-1);
                     totalCount+=1;
                     hist=document.getElementById("showChamp").innerHTML;
                     document.getElementById("showChamp2").innerHTML=hist+"<br>"+document.getElementById("showChamp2").innerHTML;
-                    champ[r]=champ[r].trim();
-                    document.getElementById("showChamp").innerHTML = champ[r];
+                    getChamp(champ.length-1);
+                    document.getElementById("showChamp").innerHTML = "-------------<br>"+champNex[0]+"<br>OR<br>"+champNex[1]+"<br><e>OR</e><br>"+champNex[2];
                 }
-                document.getElementById("countTotal").innerHTML = totalCount;
-            }
-            function open10Crystal(n){
-                hist=document.getElementById("showChamp").innerHTML;
-                document.getElementById("showChamp2").innerHTML=hist+"<br>"+document.getElementById("showChamp2").innerHTML;
-                for(var i=0;i<n;i++){
-                    r=randomInt(0,champ.length-1);
-                    totalCount+=1;
-                    champ[r]=champ[r].trim();
-                    curpulls = champ[r]+"<br>"+curpulls;
-                }
-                document.getElementById("showChamp").innerHTML=curpulls;
-                curpulls="";
                 document.getElementById("countTotal").innerHTML = totalCount;
             }
             function clearWindow(){
@@ -131,10 +130,9 @@
                 document.getElementById("showChamp2").innerHTML="";
             }
         </script>
-        <h2>5 Star Crystal</h2>
+        <h2>5* Nexus</h2>
         <p>Total Crystals= <a id="countTotal">0</a></p>
         <button type="button" id="open1Crystal" onclick="open1Crystal(1)">OPEN 1</button>
-        <button type="button" id="open10Crystal" onclick="open10Crystal(10)">OPEN 10</button>
         <button type="button" id="clear" onclick="clearWindow()">CLEAR</button>
         <p class="pulledChamp"><a id="showChamp"></a></p>
         <p class="histChamp"><a id=showChamp2></a></p>
