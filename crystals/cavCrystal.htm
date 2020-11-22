@@ -51,6 +51,15 @@
             transform: scale(0.98);
             background-color: rgb(105, 105, 105);
         }
+        .note{
+            text-align: center;
+            font-family: "Fira Code";
+            font-size: 15px;
+            color: rgb(206, 206, 206);
+        }
+        six{
+            color: rgb(16, 160, 255);
+        }
     </style>
 </head>
 <body onload="read56Star()">
@@ -78,7 +87,7 @@
                         sixCavCount+=1;
                         addchmp=get6Champ(1);
                         hist= document.getElementById("showChamp").innerHTML;
-                        document.getElementById("showChamp").innerHTML="6* "+addchmp+"<br>"+hist;
+                        document.getElementById("showChamp").innerHTML="<six>6* "+addchmp+"</six><br>"+hist;
                     }
                     else if(n>=0.01 && n<0.032){
                         fiveNexCavCount+=1;
@@ -135,6 +144,7 @@
         <button type="button" id="open10Crystal" onclick="openCavCrystal(10)">OPEN 10</button>
         <button type="button" id="open100Crystal" onclick="openCavCrystal(100)">OPEN 100</button>
         <button type="button" id="clear" onclick="clearWindow()">CLEAR</button>
+        <p class="note"><b>NOTE:</b> This MCOC Crystal Simulator is made just for fun.<br>This does not represent your next possible pull in the game.</p>
         <p><a id="showChamp"></a></p>
     </div>
 </body>

@@ -62,6 +62,12 @@
             pointer-events: none;
             color: rgb(129, 129, 129);
         }
+        .note{
+            text-align: center;
+            font-family: "Fira Code";
+            font-size: 15px;
+            color: rgb(206, 206, 206);
+        }
     </style>
 </head>
 <body onload="read5Star()">
@@ -130,6 +136,7 @@
         <button type="button" id="open1Crystal" onclick="open1Crystal(1)">OPEN 1</button>
         <button type="button" id="open10Crystal" onclick="open10Crystal(10)">OPEN 10</button>
         <button type="button" id="clear" onclick="clearWindow()">CLEAR</button>
+        <p class="note"><b>NOTE:</b> This MCOC Crystal Simulator is made just for fun.<br>This does not represent your next possible pull in the game.</p>
         <p class="pulledChamp"><a id="showChamp"></a></p>
         <p class="histChamp"><a id=showChamp2></a></p>
     </div>
