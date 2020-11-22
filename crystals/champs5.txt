@@ -1,47 +1,43 @@
 Abomination 
-Abomination (Immortal)
 Ægon  
 Agent Venom  
-Air-Walker
 Angela  
 Annihilus  
 Ant-Man
-Apocalypse  
 Archangel  
 Beast  
 Bishop  
 Black Bolt 
 Black Panther  
-Black Panther (Civil War)  
+Black Panther(Civil War)  
 Black Widow  
-Black Widow (Claire Voyant)  
+Black Widow(Claire Voyant)
+Black Widow(Deadly Origin)
 Blade  
 Cable  
 Captain America  
-Captain America (Infinity War)  
-Captain America (WWII)  
+Captain America(Infinity War)  
+Captain America(WWII)  
 Captain Marvel  
-Captain Marvel (Classic)  
+Captain Marvel(Classic)  
 Carnage  
 Civil Warrior 
-Cosmic Ghost Rider
 Colossus  
 Corvus Glaive  
 Crossbones  
 Cull Obsidian  
-Cyclops (Blue Team)  
-Cyclops (New Xavier School)  
-Daredevil (Classic)  
-Daredevil (Netflix)  
+Cyclops(Blue)  
+Cyclops(Red)  
+Daredevil(Classic)  
+Daredevil(Netflix)  
 Darkhawk 
-Deadpool (X-Force)  
+Deadpool(X-Force)  
 Diablo  
 Doctor Doom
 Doctor Octopus
 Doctor Voodoo  
 Domino  
 Dormammu  
-Dragon Man
 Drax  
 Ebony Maw  
 Electro  
@@ -63,10 +59,10 @@ Havok
 Hawkeye  
 Heimdall  
 Hela  
+Hit-Monkey
 Howard the Duck  
 Hulk  
-Hulk (Immortal)
-Hulk (Ragnarok)  
+Hulk(Ragnarok)  
 Hulkbuster  
 Human Torch  
 Hyperion  
@@ -74,7 +70,7 @@ Iceman
 Invisible Woman  
 Iron Fist  
 Iron Man  
-Iron Man (Infinity War)  
+Iron Man(Infinity War)  
 Iron Patriot  
 Juggernaut    
 Karnak  
@@ -86,26 +82,28 @@ Loki
 Longshot
 Luke Cage
 Magik  
-Magneto (Red)
-Magneto (White)  
+Magneto(Red)
+Magneto(White)  
 Man-Thing
 Masacre  
 Medusa  
 Mephisto  
 Mister Fantastic  
 Mojo
+Mole Man
 Mister Sinister  
 M.O.D.O.K.  
 Moon Knight  
 Mordo  
 Morningstar  
-Ms. Marvel (Kamala Khan)  
+Ms. Marvel(Kamala Khan)  
 Mysterio  
 Namor  
 Nebula  
 Nick Fury  
 Night Thrasher  
 Nightcrawler  
+Nova
 Old Man Logan  
 Omega Red  
 Phoenix
@@ -113,7 +111,6 @@ Proxima Midnight
 Psylocke  
 Punisher 2099  
 Quake  
-Red Goblin
 Red Guardian
 Red Hulk  
 Red Skull  
@@ -129,15 +126,15 @@ Sentry
 She-Hulk  
 Silver Surfer
 Spider-Gwen  
-Spider-Man (Classic)  
-Spider-Man (Miles Morales)  
-Spider-Man (Stark Enhanced)  
-Spider-Man (Stealth Suit)  
-Spider-Man (Symbiote)  
+Spider-Man(Classic)  
+Spider-Man(Miles Morales)  
+Spider-Man(Stark Enhanced)  
+Spider-Man(Stealth Suit)  
+Spider-Man(Symbiote)  
 Squirrel Girl
 Star-Lord  
 Storm  
-Storm (Pyramid X)
+Storm(Pyramid X)
 Sunspot  
 Superior Iron Man  
 Symbiote Supreme  
@@ -146,21 +143,20 @@ Terrax
 The Champion  
 The Hood  
 Thing  
-Thor (Jane Foster)  
-Thor (Ragnarok)  
+Thor(Jane Foster)  
+Thor(Ragnarok)  
 Tigra
 Ultron  
 Venom  
 Venompool  
 Venom the Duck  
 Vision  
-Vision (Aarkus)  
-Vision (Age of Ultron)  
+Vision(Aarkus)   
 Void  
 Vulture   
 Warlock  
 Wasp
 Winter Soldier
-Wolverine (X-23)
+Wolverine(X-23)
 Yellowjacket
 Yondu
