@@ -20,7 +20,7 @@ function readFile(file){
     }
 }
 function read5Star(){
-    readFile("../feat5pool.txt");
+    readFile("https://djindevstuff.github.io/crystals/feat5pool.txt");
 }
 function randomInt(min,max){
     return Math.floor(Math.random()*(max-min+1))+min;
