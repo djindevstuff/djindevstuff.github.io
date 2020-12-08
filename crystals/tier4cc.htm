@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="h">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>T4CC</title>
+    <link rel="perconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@450&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: rgb(61, 61, 61);
+            font-family: "Fira Code";
+            font-size: 20px;
+        }
+        p{
+            color:rgb(230, 230, 230);
+            background-color: rgb(61, 61, 61) !important;
+        }
+        h2{
+            padding-left: 70px;
+            padding-right: 70px;
+            padding-bottom: 25px;
+            padding-top: 25px;
+            color:rgb(250, 157, 18);
+            background-color: rgb(61, 61, 61) !important;
+        }
+        .login{
+            text-align: center;
+        }
+        button {        
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-family: "Fira Code";
+            font-size: 20px;
+            border-color: rgba(0, 0, 0, 0);
+            border: 2px solid;
+            background-color: rgba(0, 0, 0, 0);
+            color: rgb(206, 206, 206);
+            border-radius: 5px;
+            margin-bottom: 7px;
+            outline: none;
+        }
+        button:active{
+            transform: scale(0.98);
+            background-color: rgb(105, 105, 105);
+        }
+        footer{
+            
+            font-family: "Fira Code";
+            font-size: 14px;
+            color: rgb(206, 206, 206);
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <script>
+            var threeCount=0;
+            var skillCount=0;
+            var mutCount=0;
+            var techCount=0;
+            var cosmCount=0;
+            var mystCount=0;
+            var sciCount=0;
+            var r=0;
+            function openCrystal(n){
+                for(var i=0;i<n;i++){
+                    r=Math.random();
+                    if(r>=0.0 && r<(1/6)){
+                        skillCount+=1;
+                    }
+                    else if(r>=(1/6) && r<(2/6)){
+                        mutCount+=1;
+                    }
+                    else if(r>=(2/6) && r<(3/6)){
+                        techCount+=1;
+                    }
+                    else if(r>=(3/6) && r<(4/6)){
+                        cosmCount+=1;
+                    }
+                    else if(r>=(4/6) && r<(5/6)){
+                        mystCount+=1;
+                    }
+                    else{
+                        sciCount+=1;
+                    }
+                    totalCount=skillCount+mutCount+techCount+cosmCount+mystCount+sciCount;
+                }
+                document.getElementById("countTotal").innerHTML = totalCount;
+                document.getElementById("countSkill").innerHTML = skillCount;
+                document.getElementById("countMut").innerHTML = mutCount;
+                document.getElementById("countTech").innerHTML = techCount;
+                document.getElementById("countCosm").innerHTML = cosmCount;
+                document.getElementById("countMyst").innerHTML = mystCount;
+                document.getElementById("countSci").innerHTML = sciCount;
+            }
+            function clearWindow(){
+                totalCount=0;
+                skillCount=0;
+                mutCount=0;
+                techCount=0;
+                cosmCount=0;
+                mystCount=0;
+                sciCount=0;
+                document.getElementById("countTotal").innerHTML = totalCount;
+                document.getElementById("countSkill").innerHTML = skillCount;
+                document.getElementById("countMut").innerHTML = mutCount;
+                document.getElementById("countTech").innerHTML = techCount;
+                document.getElementById("countCosm").innerHTML = cosmCount;
+                document.getElementById("countMyst").innerHTML = mystCount;
+                document.getElementById("countSci").innerHTML = sciCount;
+            }
+        </script>
+        <h2>T4CC</h2>
+        <p>Total Crystals= <a id="countTotal">0</a></p>
+        <p>T4CC Skill= <a id="countSkill">0</a></p>
+        <p>T4CC Mutant= <a id="countMut">0</a></p>
+        <p>T4CC Tech= <a id="countTech">0</a></p>
+        <p>T4CC Cosmic= <a id="countCosm">0</a></p>
+        <p>T4CC Mystic= <a id="countMyst">0</a></p>
+        <p>T4CC Science= <a id="countSci">0</a></p>
+        <button type="button" onclick="openCrystal(1)">OPEN 1</button>
+        <button type="button" onclick="openCrystal(10)">OPEN 10</button>
+        <button type="button" onclick="openCrystal(100)">OPEN 100</button>
+        <button type="button" onclick="clearWindow()">CLEAR</button>
+    </div>
+</body>
+</html>

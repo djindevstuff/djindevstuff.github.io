@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cavalier Crystal</title>
+    <title>Featured Cavalier</title>
     <link rel="perconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@450&display=swap" rel="stylesheet">
     <style>
@@ -29,7 +29,7 @@
             color:rgb(250, 157, 18);
             background-color: rgb(61, 61, 61) !important;
         }
-        .cavalier{
+        .fcav{
             text-align: center;
         }
         button{        
@@ -60,19 +60,26 @@
         six{
             color: rgb(16, 160, 255);
         }
+        feat{
+            color: rgb(75, 255, 188);
+        }
     </style>
 </head>
 <body onload="read56Star()">
     
-    <div class="cavalier">
+    <div class="fcav">
         <script type="text/javascript" src="champ56Pull.js"></script>
         <script>
             var threeCavCount=0;
+            var fthreeCavCount=0;
             var fourCavCount=0;
+            var ffourCavCount=0;
             var fiveCavCount=0;
+            var ffiveCavCount=0;
             var fiveNexCavCount=0;
             var sixNexCavCount=0;
             var sixCavCount=0;
+            var fsixCavCount=0;
             var totalCavCount=0;
             var x;
             var addchmp;
@@ -80,32 +87,52 @@
             function openCavCrystal(x){
                 for(var i=0;i<x;i++){
                     n=Math.random();
-                    if(n>=0.0 && n<0.002){
+                    if(n>=0.0 && n<0.003){
                         sixNexCavCount+=1;
                     }
-                    else if(n>=0.002 && n<0.01){
+                    else if(n>=0.003 && n<0.015){
+                        if(n>=0.003 && n<0.004){
+                            fsixCavCount+=1;
+                            hist= document.getElementById("showChamp").innerHTML;
+                            document.getElementById("showChamp").innerHTML="<six>6* Featured!</six><br>"+hist;
+                        }
+                        else{
+                            addchmp=get6Champ(1);
+                            hist= document.getElementById("showChamp").innerHTML;
+                            document.getElementById("showChamp").innerHTML="<six>6* "+addchmp+"</six><br>"+hist;
+                        }
                         sixCavCount+=1;
-                        addchmp=get6Champ(1);
-                        //hist= document.getElementById("showChamp").innerHTML;
-                        //document.getElementById("showChamp").innerHTML="<six>6* "+addchmp+"</six><br>"+hist;
-                        hist="<six>6* "+addchmp+"</six><br>";
-                        document.getElementById("showChamp").innerHTML= hist.concat(document.getElementById("showChamp").innerHTML);
                     }
-                    else if(n>=0.01 && n<0.032){
+                    else if(n>=0.015 && n<0.05){
                         fiveNexCavCount+=1;
                     }
-                    else if(n>=0.032 && n<0.12){
+                    else if(n>=0.05 && n<0.19){
+                        if(n>=0.05 && n<0.055){
+                            ffiveCavCount+=1;
+                            hist= document.getElementById("showChamp").innerHTML;
+                            document.getElementById("showChamp").innerHTML="<six>5* Featured!</six><br>"+hist;
+                        }
+                        else{
+                            addchmp=get5Champ(1);
+                            hist= document.getElementById("showChamp").innerHTML;
+                            document.getElementById("showChamp").innerHTML="5* "+addchmp+"<br>"+hist;
+                        }
                         fiveCavCount+=1;
-                        addchmp=get5Champ(1);
-                        //hist= document.getElementById("showChamp").innerHTML;
-                        //document.getElementById("showChamp").innerHTML="5* "+addchmp+"<br>"+hist;
-                        hist="5* "+addchmp+"<br>";
-                        document.getElementById("showChamp").innerHTML= hist.concat(document.getElementById("showChamp").innerHTML);
                     }
-                    else if(n>=0.12 && n<0.5){
+                    else if(n>=0.19 && n<0.55){
+                        if(n>=0.19 && n<0.21){
+                            ffourCavCount+=1;
+                            hist= document.getElementById("showChamp").innerHTML;
+                            document.getElementById("showChamp").innerHTML="<six>4* Featured!</six><br>"+hist;
+                        }
                         fourCavCount+=1;
                     }
                     else{
+                        if(n>=0.55 && n<0.58){
+                            fthreeCavCount+=1;
+                            hist= document.getElementById("showChamp").innerHTML;
+                            document.getElementById("showChamp").innerHTML="<six><feat>3* Featured!</feat></six><br>"+hist;
+                        }
                         threeCavCount+=1;
                     }
                     totalCavCount=threeCavCount+fourCavCount+fiveCavCount+fiveNexCavCount+sixCavCount+sixNexCavCount;

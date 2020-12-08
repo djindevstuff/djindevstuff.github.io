@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="h">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>6 Star Crystal</title>
+    <link rel="perconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@450&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: rgb(61, 61, 61);
+            font-family: "Fira Code";
+            font-size: 20px;
+        }
+        p{
+            color:rgb(230, 230, 230);
+            background-color: rgb(61, 61, 61) !important;
+        }
+        h2{
+            padding-left: 70px;
+            padding-right: 70px;
+            padding-bottom: 25px;
+            padding-top: 25px;
+            color:rgb(250, 157, 18);
+            background-color: rgb(61, 61, 61) !important;
+        }
+        .pulledChamp{
+            color:rgb(230, 230, 230);
+            background-color: rgb(61, 61, 61) !important;
+            font-size: 22px;
+        }
+        .histChamp{
+            color:rgb(210, 210, 210);
+            background-color: rgb(61, 61, 61) !important;
+            font-size: 20px;
+        }
+        .sixStar{
+            text-align: center;
+        }
+        button {        
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-family: "Fira Code";
+            font-size: 20px;
+            border-color: rgba(0, 0, 0, 0);
+            border: 2px solid;
+            background-color: rgba(0, 0, 0, 0);
+            color: rgb(206, 206, 206);
+            border-radius: 5px;
+            margin-bottom: 7px;
+            outline: none;
+        }
+        button:active{
+            transform: scale(0.98);
+            background-color: rgb(105, 105, 105);
+        }
+        .btn-disabled{
+            cursor: not-allowed;
+            pointer-events: none;
+            color: rgb(129, 129, 129);
+        }
+        .note{
+            text-align: center;
+            font-family: "Fira Code";
+            font-size: 14px;
+            color: rgb(206, 206, 206);
+        }
+    </style>
+</head>
+<body onload="read6Star()">
+    <div class="sixStar">
+        <script>
+            var totalCount=0;
+            var champ;
+            var pull=[10];
+            var res;
+            var r;
+            var nl=0;
+            var hist="";
+            var curpulls="";
+            function readFile(file){
+                var f = new XMLHttpRequest();
+                f.open("GET", file, true);
+                f.onreadystatechange = function (){
+                    if(f.readyState === 4){
+                        if(f.status === 200 || f.status == 0){
+                            res= f.responseText;
+                            champ=res.split("\n");
+                        }
+                    }
+                }
+                f.send(null);
+            }
+            function read6Star(){
+                readFile("champs6.txt");
+            }
+            function randomInt(min,max){
+                return Math.floor(Math.random()*(max-min+1))+min;
+            }
+            function open1Crystal(n){
+                for(var i=0;i<n;i++){
+                    r=randomInt(0,champ.length-1);
+                    totalCount+=1;
+                    hist=document.getElementById("showChamp").innerHTML;
+                    document.getElementById("showChamp2").innerHTML=hist+"<br>"+document.getElementById("showChamp2").innerHTML;
+                    champ[r]=champ[r].trim();
+                    document.getElementById("showChamp").innerHTML = champ[r];
+                }
+                document.getElementById("countTotal").innerHTML = totalCount;
+            }
+            function open10Crystal(n){
+                hist=document.getElementById("showChamp").innerHTML;
+                document.getElementById("showChamp2").innerHTML=hist+"<br>"+document.getElementById("showChamp2").innerHTML;
+                for(var i=0;i<n;i++){
+                    r=randomInt(0,champ.length-1);
+                    totalCount+=1;
+                    champ[r]=champ[r].trim();
+                    curpulls = champ[r]+"<br>"+curpulls;
+                }
+                document.getElementById("showChamp").innerHTML=curpulls;
+                curpulls="";
+                document.getElementById("countTotal").innerHTML = totalCount;
+            }
+            function clearWindow(){
+                totalCount=0;
+                document.getElementById("countTotal").innerHTML=0;
+                document.getElementById("showChamp").innerHTML="";
+                document.getElementById("showChamp2").innerHTML="";
+            }
+        </script>
+        <h2>6 Star Crystal</h2>
+        <p>Total Crystals= <a id="countTotal">0</a></p>
+        <button type="button" id="open1Crystal" onclick="open1Crystal(1)">OPEN 1</button>
+        <button type="button" id="open10Crystal" onclick="open10Crystal(10)">OPEN 10</button>
+        <button type="button" id="clear" onclick="clearWindow()">CLEAR</button>
+        <p class="pulledChamp"><a id="showChamp"></a></p>
+        <p class="histChamp"><a id=showChamp2></a></p>
+        <p class="note"><b>NOTE:</b> This MCOC Crystal Simulator is made just for fun.<br>This does not represent your next possible pull in the game.</p>
+    </div>
+</body>
+</html>
