@@ -31,8 +31,8 @@ function read6File(file){
     f.send(null);
 }
 function read56Star(){
-    read5File("https://djindevstuff.github.io/crystals/script/champs5.txt");
-    read6File("https://djindevstuff.github.io/crystals/script/champs6.txt");
+    read5File("https://djindevstuff.github.io/crystals/champsfive.txt");
+    read6File("https://djindevstuff.github.io/crystals/champssix.txt");
 }
 function randomInt(min,max){
     return Math.floor(Math.random()*(max-min+1))+min;
