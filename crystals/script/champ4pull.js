@@ -16,7 +16,7 @@ function readFile(file){
     f.send(null);
 }
 function read4Star(){
-    readFile("champs4.txt");
+    readFile("https://djindevstuff.github.io/crystals/champsfour.txt");
 }
 function randomInt(min,max){
     return Math.floor(Math.random()*(max-min+1))+min;
