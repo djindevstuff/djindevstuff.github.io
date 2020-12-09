@@ -7,85 +7,11 @@
     <title>Login Crystal</title>
     <link rel="perconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@450&display=swap" rel="stylesheet">
-    <style>
-        body{
-            background-color: rgb(61, 61, 61);
-            font-family: "Fira Code";
-            font-size: 20px;
-        }
-        p{
-            color:rgb(230, 230, 230);
-            background-color: rgb(61, 61, 61) !important;
-        }
-        h2{
-            padding-left: 70px;
-            padding-right: 70px;
-            padding-bottom: 25px;
-            padding-top: 25px;
-            color:rgb(250, 157, 18);
-            background-color: rgb(61, 61, 61) !important;
-        }
-        .login{
-            text-align: center;
-        }
-        button {        
-            padding-left: 15px;
-            padding-right: 15px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            font-family: "Fira Code";
-            font-size: 20px;
-            border-color: rgba(0, 0, 0, 0);
-            border: 2px solid;
-            background-color: rgba(0, 0, 0, 0);
-            color: rgb(206, 206, 206);
-            border-radius: 5px;
-            margin-bottom: 7px;
-            outline: none;
-        }
-        button:active{
-            transform: scale(0.98);
-            background-color: rgb(105, 105, 105);
-        }
-        footer{
-            
-            font-family: "Fira Code";
-            font-size: 14px;
-            color: rgb(206, 206, 206);
-        }
-    </style>
+    <link rel="stylesheet" href="https://djindevstuff.github.io/crystals/style/logincrystal.css">
 </head>
 <body>
+    <script type="text/javascript" src="https://djindevstuff.github.io/crystals/script/logincrystal.js"></script>
     <div class="login">
-        <script>
-            var threeCount=0;
-            var fourCount=0;
-            var totalCount=0;
-            var r=0;
-            function openCrystal(n){
-                for(var i=0;i<n;i++){
-                    r=Math.random();
-                    if(r>=0.0 && r<0.98){
-                        threeCount+=1;
-                    }
-                    else{
-                        fourCount+=1;
-                    }
-                    totalCount=threeCount+fourCount;
-                }
-                document.getElementById("countTotal").innerHTML = totalCount;
-                document.getElementById("countThree").innerHTML = threeCount;
-                document.getElementById("countFour").innerHTML = fourCount;
-            }
-            function clearWindow(){
-                totalCount=0;
-                threeCount=0;
-                fourCount=0;
-                document.getElementById("countTotal").innerHTML = totalCount;
-                document.getElementById("countThree").innerHTML = threeCount;
-                document.getElementById("countFour").innerHTML = fourCount;
-            }
-        </script>
         <h2>Login Crystal</h2>
         <p>Total Crystals= <a id="countTotal">0</a></p>
         <p>3/4 Stars= <a id="countThree">0</a></p>
