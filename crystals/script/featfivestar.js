@@ -8,7 +8,7 @@ var nl=0;
 var hist="";
 var curpulls="";
 function makeArray(){
-    for(i=1;i<=x;i++){
+    for(var i=1;i<=x;i++){
         champ[i]=i;
     }
 }

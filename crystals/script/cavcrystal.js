@@ -12,13 +12,11 @@ function openCavCrystal(x){
     for(var i=0;i<x;i++){
         n=Math.random();
         if(n>=0.0 && n<0.002){
-                        sixNexCavCount+=1;
+            sixNexCavCount+=1;
         }
         else if(n>=0.002 && n<0.01){
             sixCavCount+=1;
             addchmp=get6Champ(1);
-            //hist= document.getElementById("showChamp").innerHTML;
-            //document.getElementById("showChamp").innerHTML="<six>6* "+addchmp+"</six><br>"+hist;
             hist="<six>6* "+addchmp+"</six><br>";
             document.getElementById("showChamp").innerHTML= hist.concat(document.getElementById("showChamp").innerHTML);
         }
@@ -28,16 +26,14 @@ function openCavCrystal(x){
         else if(n>=0.032 && n<0.12){
             fiveCavCount+=1;
             addchmp=get5Champ(1);
-                        //hist= document.getElementById("showChamp").innerHTML;
-                        //document.getElementById("showChamp").innerHTML="5* "+addchmp+"<br>"+hist;
             hist="5* "+addchmp+"<br>";
             document.getElementById("showChamp").innerHTML= hist.concat(document.getElementById("showChamp").innerHTML);
         }
         else if(n>=0.12 && n<0.5){
-                        fourCavCount+=1;
+            fourCavCount+=1;
         }
         else{
-                        threeCavCount+=1;
+            threeCavCount+=1;
         }
         totalCavCount=threeCavCount+fourCavCount+fiveCavCount+fiveNexCavCount+sixCavCount+sixNexCavCount;
     } 
