@@ -38,7 +38,7 @@ function openCavCrystal(x){
             if(n>=0.05 && n<0.055){
                 ffiveCavCount+=1;
                 hist= document.getElementById("showChamp").innerHTML;
-                document.getElementById("showChamp").innerHTML="<six>5* Featured!</six><br>"+hist;
+                document.getElementById("showChamp").innerHTML="<five>5* Featured!</five><br>"+hist;
             }
             else{
                 addchmp=get5Champ(1);
@@ -51,7 +51,7 @@ function openCavCrystal(x){
             if(n>=0.19 && n<0.21){
                 ffourCavCount+=1;
                 hist= document.getElementById("showChamp").innerHTML;
-                document.getElementById("showChamp").innerHTML="<six>4* Featured!</six><br>"+hist;
+                document.getElementById("showChamp").innerHTML="<four>4* Featured!</four><br>"+hist;
             }
                 fourCavCount+=1;
             }
@@ -59,7 +59,7 @@ function openCavCrystal(x){
                 if(n>=0.55 && n<0.58){
                     fthreeCavCount+=1;
                     hist= document.getElementById("showChamp").innerHTML;
-                    document.getElementById("showChamp").innerHTML="<six><feat>3* Featured!</feat></six><br>"+hist;
+                    document.getElementById("showChamp").innerHTML="<three><feat>3* Featured!</three></six><br>"+hist;
                 }
                 threeCavCount+=1;
             }
