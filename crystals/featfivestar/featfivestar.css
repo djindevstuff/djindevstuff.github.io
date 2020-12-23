@@ -1,11 +1,7 @@
 body{
     background-color: rgb(61, 61, 61);
-    font-family: "Fira Code",monospace;
+    font-family: "Fira Code";
     font-size: 20px;
-}
-g{
-    color: rgb(97, 37, 194);
-    background-color: rgb(0, 0, 0) !important;
 }
 p{
     color:rgb(230, 230, 230);
@@ -16,15 +12,25 @@ h2{
     color:rgb(250, 157, 18);
     background-color: rgb(61, 61, 61) !important;
 }
-.fcav{
+.pulledChamp{
+    color:rgb(230, 230, 230);
+    background-color: rgb(61, 61, 61) !important;
+    font-size: 22px;
+}
+.histChamp{
+    color:rgb(210, 210, 210);
+    background-color: rgb(61, 61, 61) !important;
+    font-size: 20px;
+}
+.fiveStar{
     text-align: center;
 }
-button{        
+button {        
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-family: "Fira Code",monospace;
+    font-family: "Fira Code";
     font-size: 20px;
     border-color: rgba(0, 0, 0, 0);
     border: 2px solid;
@@ -38,24 +44,26 @@ button:active{
     transform: scale(0.98);
     background-color: rgb(105, 105, 105);
 }
+.btn-disabled{
+    cursor: not-allowed;
+    pointer-events: none;
+    color: rgb(129, 129, 129);
+}
 .note{
     text-align: center;
     font-family: "Fira Code";
     font-size: 14px;
     color: rgb(206, 206, 206);
 }
-six{
-    color: rgb(16, 160, 255);
+.border{
+    position: relative;
+    left: 0px;
 }
-sixf{
-    color: rgb(145, 210, 255);
-}
-five{
-    color: rgb(255, 80, 80);
-}
-four{
-    color: rgb(255, 210, 64);
-}
-three{
-    color: rgb(185, 185, 185);
+.fivestar{
+    transform-origin: 0% 0%;
+    width: 59px;
+    height: 59px;
+    transform: translateX(-67px) translateY(-7px);
+    position: absolute;
+    z-index: 1;
 }

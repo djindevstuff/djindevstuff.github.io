@@ -16,7 +16,7 @@ h2{
     color:rgb(250, 157, 18);
     background-color: rgb(61, 61, 61) !important;
 }
-.fcav{
+.cavalier{
     text-align: center;
 }
 button{        
@@ -46,16 +46,4 @@ button:active{
 }
 six{
     color: rgb(16, 160, 255);
-}
-sixf{
-    color: rgb(145, 210, 255);
-}
-five{
-    color: rgb(255, 80, 80);
-}
-four{
-    color: rgb(255, 210, 64);
-}
-three{
-    color: rgb(185, 185, 185);
 }
