@@ -15,36 +15,11 @@
         <h2>Featured 5* Crystal</h2>
         <p>Total Crystals= <a id="countTotal">0</a></p>
         <button type="button" id="open1Crystal" onclick="openCrystal(1)">OPEN 1</button>
+        <button type="button" id="open10Crystal" onclick="openCrystal(5)">OPEN 5</button>
         <button type="button" id="clear" onclick="clearWindow()">CLEAR</button>
-        
-    </div>
-    <div class="fiveStar">
-        <button type="button" id="spoiler_button" name="spoiler_button">Show Champions </button>
-        <div class="spoiler_champs" id="spoiler_text" style="display: none;"><p><a id="reveal_pool"></a></p></div>
+        <div><p><a id="reveal_pool"></a></p></div>
         <p><a id="dispChamp"></a></p>
         <p class="note"><b>NOTE:</b> This MCOC Crystal Simulator is made just for fun.<br>This does not represent your next possible pull in the game.</p>
     </div>
-    <script>
-        var t;
-        var co=0;
-        var flag=0;
-        var divToggleVis = document.getElementById("spoiler_text");
-        var button = document.getElementById("spoiler_button");
-        button.onclick=function(){
-            if(flag==0){
-                for(var i=1;i<=x;i++){
-                    t="<img class=\"border\" src=\"https://djindevstuff.github.io/crystals/featfivepool/frame5.png\" width=\"72px\" height=\"60px\"><img class=\"fivestar\" src=\"https://djindevstuff.github.io/crystals/featfivepool/"+i+".png\">";
-                    document.getElementById("reveal_pool").innerHTML= t.concat(document.getElementById("reveal_pool").innerHTML);
-                }
-                flag=1;
-            }
-            if(divToggleVis.style.display === 'none'){
-                divToggleVis.style.display = 'block';
-            }
-            else{
-                divToggleVis.style.display = 'none';
-            }
-        }
-    </script>
 </body>
 </html>

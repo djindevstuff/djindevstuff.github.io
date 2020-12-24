@@ -58,12 +58,29 @@ button:active{
 .border{
     position: relative;
     left: 0px;
+    margin: 5px;
 }
 .fivestar{
     transform-origin: 0% 0%;
     width: 59px;
     height: 59px;
-    transform: translateX(-67px) translateY(-7px);
+    margin: 5px;
+    transform: translateX(-77px) translateY(-7px);
     position: absolute;
     z-index: 1;
+}
+.dot{
+    height: 27px;
+    width: 27px;
+    margin: 5px;
+    font-size: 16px;
+    color: rgb(218, 218, 218);
+    background-color: rgba(75, 75, 75, 0.6);
+    border-radius: 50%;
+    border-color: rgb(231, 231, 231);
+    display: inline-block;
+    transform-origin: 0% 0%;
+    transform: translateX(-35px) translateY(-10px);
+    position: absolute;
+    z-index: 2;
 }
