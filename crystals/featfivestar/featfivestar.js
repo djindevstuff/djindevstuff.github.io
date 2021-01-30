@@ -11,7 +11,7 @@ function makeArray(){
         champ[i]=i;
     }
     for(var i=1;i<=x;i++){
-        t="<img class=\"border\" src=\"https://djindevstuff.github.io/crystals/featfivepool/frame5.png\" width=\"72px\" height=\"60px\"><img class=\"fivestar\" src=\"https://djindevstuff.github.io/crystals/featfivepool/"+i+".png\"></span><span class=\"dot\" id=\"champ"+i+"\"></span>";
+        t="<img class=\"border\" src=\"https://djindevstuff.github.io/crystals/featfivepool/frame5.png\" width=\"72px\" height=\"60px\"><img class=\"fivestar\" src=\"https://djindevstuff.github.io/crystals/featfivepool/"+i+".png\"><span class=\"dot\" id=\"champ"+i+"\"></span>";
         document.getElementById("reveal_pool").innerHTML= t.concat(document.getElementById("reveal_pool").innerHTML);
     }
     for(var i=1;i<=x;i++){

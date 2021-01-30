@@ -7,10 +7,10 @@
     <title>Wish Crystal</title>
     <link rel="perconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@450&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="wishcrystal.css">
+    <link rel="stylesheet" href="https://djindevstuff.github.io/crystals/wishcrystal/wishcrystal.css">
 </head>
 <body onload="makeArray()">
-    <script type="text/javascript" src="wishcrystal.js"></script>
+    <script type="text/javascript" src="https://djindevstuff.github.io/crystals/wishcrystal/wishcrystal.js"></script>
     <div class="fiveStar">
         <h2>Wish Crystal</h2>
         <p>Total Crystals= <a id="countTotal">0</a></p>
@@ -52,7 +52,7 @@
                 t="";
                 document.getElementById("reveal_champ").innerHTML="";
                 for(var i=0;i<=j.length-1;i++){
-                    t="<img onclick=\"addtoarray("+j[i]+")\" class=\"fivestar\" src=\""+""+"https://djindevstuff.github.io/crystals/featfivepool/"+j[i]+".png\" width=\"60px\" height=\"60px\">";
+                    t="<img class=\"border\" src=\"https://djindevstuff.github.io/crystals/featfivepool/frame5.png\" width=\"72px\" height=\"60px\"><img onclick=\"addtoarray("+j[i]+")\" class=\"fivestar\" src=\""+"https://djindevstuff.github.io/crystals"+"/featfivepool/"+j[i]+".png\" width=\"60px\" height=\"60px\">";
                     document.getElementById("reveal_champ").innerHTML= t.concat(document.getElementById("reveal_champ").innerHTML);
                 }
                 flag=1;

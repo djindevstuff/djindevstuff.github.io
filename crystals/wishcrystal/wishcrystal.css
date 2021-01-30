@@ -62,20 +62,22 @@ button:active{
     font-size: 14px;
     color: rgb(206, 206, 206);
 }
-.fivestar{
-    margin-left: 2px;
-    margin-right: 2px;
-    margin-top: 2px;
-}
 .border{
     position: relative;
-    left: 33px;
+    left: 0px;
+    margin: 5px;
+}
+.fivestar{
+    transform-origin: 0% 0%;
+    width: 59px;
+    height: 59px;
+    margin: 5px;
+    transform: translateX(-77px) translateY(-7px);
+    position: absolute;
+    z-index: 1;
 }
 .fivestarimg{
     position: relative;
     right: 34px;
     bottom: 8px;
-}
-.fivestar:hover{
-    transform: scale(1.2);
 }

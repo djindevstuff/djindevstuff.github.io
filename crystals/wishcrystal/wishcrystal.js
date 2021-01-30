@@ -38,12 +38,12 @@ function readFile(file,cla){
     f.send(null);
 }
 function makeArray(){
-    readFile("/classpool/cosmic.txt","cosmic");
-    readFile("/classpool/mutant.txt","mutant");
-    readFile("/classpool/mystic.txt","mystic");
-    readFile("/classpool/science.txt","science");
-    readFile("/classpool/skill.txt","skill");
-    readFile("/classpool/tech.txt","tech");
+    readFile("https://djindevstuff.github.io/crystals/classpool/cosmic.txt","cosmic");
+    readFile("https://djindevstuff.github.io/crystals/classpool/mutant.txt","mutant");
+    readFile("https://djindevstuff.github.io/crystals/classpool/mystic.txt","mystic");
+    readFile("https://djindevstuff.github.io/crystals/classpool/science.txt","science");
+    readFile("https://djindevstuff.github.io/crystals/classpool/skill.txt","skill");
+    readFile("https://djindevstuff.github.io/crystals/classpool/tech.txt","tech");
 }
 function randomInt(min,max){
     return Math.floor(Math.random()*(max-min+1))+min;
@@ -52,7 +52,7 @@ function openCrystal(n){
     for(var i=0;i<n;i++){
         r=randomInt(0,wish_pool.length-1);
         totalCount+=1;
-        hist="<img class=\"border\" src=\"/featfivepool/frame5.png\" width=\"72px\" height=\"60px\"><img class=\"fivestarimg\" src=\"/featfivepool/"+wish_pool[r]+".png\" width=\"60px\" height=\"60px\"><br>";
+        hist="<img class=\"border\" src=\"https://djindevstuff.github.io/crystals/featfivepool/frame5.png\" width=\"72px\" height=\"60px\"><img class=\"fivestar\" src=\"https://djindevstuff.github.io/crystals/featfivepool/"+wish_pool[r]+".png\" width=\"60px\" height=\"60px\"><br>";
         document.getElementById("dispChamp").innerHTML= hist.concat(document.getElementById("dispChamp").innerHTML);
     }
     document.getElementById("countTotal").innerHTML = totalCount;
