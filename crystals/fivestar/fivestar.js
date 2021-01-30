@@ -1,9 +1,7 @@
 var totalCount=0;
 var champ;
-var pull=[10];
 var res;
 var r;
-var nl=0;
 var hist="";
 var curpulls="";
 function readFile(file){

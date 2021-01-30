@@ -1,13 +1,10 @@
 var totalCount=0;
 var x=24;
 var champ=[x];
-var pull=[10];
-var res;
 var r;
 var nl="";
 var n;
 var hist="";
-var curpulls="";
 var t;
 function makeArray(){
     for(var i=1;i<=x;i++){

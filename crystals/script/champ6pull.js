@@ -1,7 +1,6 @@
 var champ;
 var res;
 var r;
-var pull;
 function readFile(file){
     var f = new XMLHttpRequest();
     f.open("GET", file, true);

@@ -4,7 +4,6 @@ var fourNexGmCount=0;
 var fiveGmCount=0;
 var fiveNexGmCount=0;
 var totalGmCount=0;
-var r=0;
 var addchmp;
 function openGmCrystal(x){
     for(var i=0;i<x;i++){

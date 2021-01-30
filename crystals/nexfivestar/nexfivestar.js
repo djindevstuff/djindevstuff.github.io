@@ -3,7 +3,6 @@ var champ;
 var champNex=[3];
 var r=[3];
 var res;
-var x;
 var hist="";
 function readFile(file){
     var f = new XMLHttpRequest();

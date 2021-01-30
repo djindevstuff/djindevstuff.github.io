@@ -9,7 +9,6 @@ var sixNexCavCount=0;
 var sixCavCount=0;
 var fsixCavCount=0;
 var totalCavCount=0;
-var x;
 var addchmp;
 var hist;
 function openCavCrystal(x){

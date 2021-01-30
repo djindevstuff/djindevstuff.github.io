@@ -2,8 +2,7 @@ var champ5;
 var champ6;
 var res5;
 var r;
-var res6
-var pull;
+var res6;
 function read5File(file){
     var f = new XMLHttpRequest();
     f.open("GET", file, true);

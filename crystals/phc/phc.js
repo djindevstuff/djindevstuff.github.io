@@ -3,7 +3,6 @@ var threePhcCount=0;
 var fourPhcCount=0;
 var fourNexPhcCount=0;
 var totalPhcCount=0;
-var r=0;
 var addchmp;
 function openPhCrystal(x){
     for(var i=0;i<x;i++){
