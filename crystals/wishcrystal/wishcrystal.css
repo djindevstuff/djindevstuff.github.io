@@ -16,6 +16,9 @@ h2{
     color:rgb(250, 157, 18);
     background-color: rgb(61, 61, 61) !important;
 }
+div{
+    text-align: center;
+}
 .pulledChamp{
     color:rgb(230, 230, 230);
     background-color: rgb(61, 61, 61) !important;
@@ -31,6 +34,9 @@ h2{
 }
 .skill{
     text-align: center;
+}
+.selected{
+    color: rgba(0, 0, 0, 0.342);
 }
 button{        
     padding-left: 15px;
@@ -63,11 +69,13 @@ button:active{
     color: rgb(206, 206, 206);
 }
 .border{
+    filter: grayscale(0%);
     position: relative;
     left: 0px;
     margin: 5px;
 }
 .fivestar{
+    filter: grayscale(0%);
     transform-origin: 0% 0%;
     width: 59px;
     height: 59px;
@@ -75,9 +83,4 @@ button:active{
     transform: translateX(-77px) translateY(-7px);
     position: absolute;
     z-index: 1;
-}
-.fivestarimg{
-    position: relative;
-    right: 34px;
-    bottom: 8px;
 }
