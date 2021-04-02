@@ -32,13 +32,13 @@ div{
 .fiveStar{
     text-align: center;
 }
-.skill{
+.classfiltered{
     text-align: center;
 }
 .selected{
-    color: rgba(0, 0, 0, 0.342);
+    color: rgb(0, 0, 0);
 }
-button{        
+.nbutton{        
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 10px;
@@ -51,6 +51,16 @@ button{
     color: rgb(206, 206, 206);
     border-radius: 5px;
     margin-bottom: 7px;
+    outline: none;
+}
+.ibutton{
+    padding-top: 5px;
+    margin-left: 15px;
+    font-family: "Fira Code";
+    font-size: 20px;
+    border-color: rgba(0, 0, 0, 0);
+    border: 0px solid;
+    background-color: rgba(61, 61, 61, 0);
     outline: none;
 }
 button:active{

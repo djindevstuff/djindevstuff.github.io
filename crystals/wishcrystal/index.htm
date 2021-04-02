@@ -14,11 +14,17 @@
     <div class="fiveStar">
         <h2>Wish Crystal</h2>
         <p>Total Crystals= <a id="countTotal">0</a></p>
-        <button type="button" id="open1Crystal" onclick="openCrystal(1)">OPEN 1</button>
-        <button type="button" id="open10Crystal" onclick="openCrystal(10)">OPEN 10</button>
-        <button type="button" id="clear" onclick="clearWindow()">CLEAR</button>
+        <button class="nbutton" type="button" id="open1Crystal" onclick="openCrystal(1)">OPEN 1</button>
+        <button class="nbutton" type="button" id="open10Crystal" onclick="openCrystal(10)">OPEN 10</button>
+        <button class="nbutton" type="button" id="clear" onclick="clearWindow()">CLEAR</button>
     </div>
-    <div class="skill"><p><a id="reveal_champ"></a></p></div>
+    <div><button class="ibutton" id="ib1" type="button" onclick="addchamps(skill,1)"><img src="https://djindevstuff.github.io/crystals/featfivepool/skill.png" width="35px" height="35px"></button>
+        <button class="ibutton" id="ib2" type="button" onclick="addchamps(mutant,2)"><img src="https://djindevstuff.github.io/crystals/featfivepool/mutant.png" width="35px" height="35px"></button>
+        <button class="ibutton" id="ib3" type="button" onclick="addchamps(mystic,3)"><img src="https://djindevstuff.github.io/crystals/featfivepool/tech.png" width="35px" height="35px"></button>
+        <button class="ibutton" id="ib4" type="button" onclick="addchamps(science,4)"><img src="https://djindevstuff.github.io/crystals/featfivepool/cosmic.png" width="35px" height="35px"></button>
+        <button class="ibutton" id="ib5" type="button" onclick="addchamps(cosmic,5)"><img src="https://djindevstuff.github.io/crystals/featfivepool/mystic.png" width="35px" height="35px"></button>
+        <button class="ibutton" id="ib6" type="button" onclick="addchamps(tech,6)"><img src="https://djindevstuff.github.io/crystals/featfivepool/science.png" width="35px" height="35px"></button></div>
+    <div class="classfiltered" id="champarea" display='block'><p><a id="reveal_champ"></a></p></div>
     <div>
         <p><a id="dispChamp"></a></p>
         <p class="note"><b>NOTE:</b> This MCOC Crystal Simulator is made just for fun.<br>This does not represent your next possible pull in the game.</p>
@@ -30,8 +36,12 @@
         var addr="https://djindevstuff.github.io/crystals";
         var t;
         var flag=0;
-        function spoiler(divToggleVis){
-            if(divToggleVis.style.display === 'none' || divToggleVis.style.display === 'block'){
+        var divToggleVis;
+        function switchclass(classnum){
+            switch(classnum){
+                case 1 : divToggleVis=document.getElementById("skillarea"); break
+            }
+            if(divToggleVis.style.display === 'none'){
                 divToggleVis.style.display = 'block';
             }
             else{

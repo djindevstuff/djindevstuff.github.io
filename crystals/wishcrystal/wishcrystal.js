@@ -13,61 +13,42 @@ function readFile(file,cla){
         if(f.readyState === 4){
             if(f.status === 200 || f.status == 0){
                 res= f.responseText;
-                if(cla=="cosmic"){
-                    cosmic=res.split("\n");
-                    for(var i=0;i<=cosmic.length-1;i++){
-                        t="<img class=\"border\" id=\"bimage"+cosmic[i]+"\" src=\"https://djindevstuff.github.io/crystals/featfivepool/frame5.png\" width=\"72px\" height=\"60px\"><img onclick=\"addtoarray("+cosmic[i]+")\" class=\"fivestar\" id=\"chimage"+cosmic[i]+"\" src=\""+"https://djindevstuff.github.io/crystals"+"/featfivepool/"+cosmic[i]+".png\" width=\"60px\" height=\"60px\">";
-                        document.getElementById("reveal_champ").innerHTML= t.concat(document.getElementById("reveal_champ").innerHTML);
-                    }
+                switch(cla){
+                    case 1 : skill=res.split("\n"); addchamps(skill,1); break;
+                    case 2 : mutant=res.split("\n"); break;
+                    case 3 : mystic=res.split("\n"); break;
+                    case 4 : science=res.split("\n"); break;
+                    case 5 : cosmic=res.split("\n"); break;
+                    case 6 : tech=res.split("\n"); break;
                 }
-                else if(cla=="mutant"){
-                    mutant=res.split("\n");
-                    for(var i=0;i<=mutant.length-1;i++){
-                        t="<img class=\"border\" id=\"bimage"+mutant[i]+"\" src=\"https://djindevstuff.github.io/crystals/featfivepool/frame5.png\" width=\"72px\" height=\"60px\"><img onclick=\"addtoarray("+mutant[i]+")\" class=\"fivestar\" id=\"chimage"+mutant[i]+"\" src=\""+"https://djindevstuff.github.io/crystals"+"/featfivepool/"+mutant[i]+".png\" width=\"60px\" height=\"60px\">";
-                        document.getElementById("reveal_champ").innerHTML= t.concat(document.getElementById("reveal_champ").innerHTML);
-                    }
-                }
-                else if(cla=="mystic"){
-                    mystic=res.split("\n");
-                    for(var i=0;i<=mystic.length-1;i++){
-                        t="<img class=\"border\" id=\"bimage"+mystic[i]+"\" src=\"https://djindevstuff.github.io/crystals/featfivepool/frame5.png\" width=\"72px\" height=\"60px\"><img onclick=\"addtoarray("+mystic[i]+")\" class=\"fivestar\" id=\"chimage"+mystic[i]+"\" src=\""+"https://djindevstuff.github.io/crystals"+"/featfivepool/"+mystic[i]+".png\" width=\"60px\" height=\"60px\">";
-                        document.getElementById("reveal_champ").innerHTML= t.concat(document.getElementById("reveal_champ").innerHTML);
-                    }
-                }
-                else if(cla=="science"){
-                    science=res.split("\n");
-                    for(var i=0;i<=science.length-1;i++){
-                        t="<img class=\"border\" id=\"bimage"+science[i]+"\" src=\"https://djindevstuff.github.io/crystals/featfivepool/frame5.png\" width=\"72px\" height=\"60px\"><img onclick=\"addtoarray("+science[i]+")\" class=\"fivestar\" id=\"chimage"+science[i]+"\" src=\""+"https://djindevstuff.github.io/crystals"+"/featfivepool/"+science[i]+".png\" width=\"60px\" height=\"60px\">";
-                        document.getElementById("reveal_champ").innerHTML= t.concat(document.getElementById("reveal_champ").innerHTML);
-                    }
-                }
-                else if(cla=="skill"){
-                    skill=res.split("\n");
-                    for(var i=0;i<=skill.length-1;i++){
-                        t="<img class=\"border\" id=\"bimage"+skill[i]+"\" src=\"https://djindevstuff.github.io/crystals/featfivepool/frame5.png\" width=\"72px\" height=\"60px\"><img onclick=\"addtoarray("+skill[i]+")\" class=\"fivestar\" id=\"chimage"+skill[i]+"\" src=\""+"https://djindevstuff.github.io/crystals"+"/featfivepool/"+skill[i]+".png\" width=\"60px\" height=\"60px\">";
-                        document.getElementById("reveal_champ").innerHTML= t.concat(document.getElementById("reveal_champ").innerHTML);
-                    }
-                }
-                else if(cla=="tech"){
-                    tech=res.split("\n");
-                    for(var i=0;i<=tech.length-1;i++){
-                        t="<img class=\"border\" id=\"bimage"+tech[i]+"\" src=\"https://djindevstuff.github.io/crystals/featfivepool/frame5.png\" width=\"72px\" height=\"60px\"><img onclick=\"addtoarray("+tech[i]+")\" class=\"fivestar\" id=\"chimage"+tech[i]+"\" src=\""+"https://djindevstuff.github.io/crystals"+"/featfivepool/"+tech[i]+".png\" width=\"60px\" height=\"60px\">";
-                        document.getElementById("reveal_champ").innerHTML= t.concat(document.getElementById("reveal_champ").innerHTML);
-                    }
-                }
-                else{}
             }
         }
     }
     f.send(null);
 }
+
+function addchamps(thisclass, cnum){
+    document.getElementById("reveal_champ").innerHTML="";
+    for(var i=0;i<=thisclass.length-1;i++){
+        t="<img class=\"border\" id=\"bimage"+thisclass[i]+"\" src=\"https://djindevstuff.github.io/crystals/featfivepool/frame5.png\" width=\"72px\" height=\"60px\"><img onclick=\"addtoarray("+thisclass[i]+")\" class=\"fivestar\" id=\"chimage"+thisclass[i]+"\" src=\""+"https://djindevstuff.github.io/crystals"+"/featfivepool/"+thisclass[i]+".png\" width=\"60px\" height=\"60px\">";
+        document.getElementById("reveal_champ").innerHTML= t.concat(document.getElementById("reveal_champ").innerHTML);
+    }
+    document.getElementById("ib1").style.backgroundColor= "rgb(61,61,61)";
+    document.getElementById("ib2").style.backgroundColor= "rgb(61,61,61)";
+    document.getElementById("ib3").style.backgroundColor= "rgb(61,61,61)";
+    document.getElementById("ib4").style.backgroundColor= "rgb(61,61,61)";
+    document.getElementById("ib5").style.backgroundColor= "rgb(61,61,61)";
+    document.getElementById("ib6").style.backgroundColor= "rgb(61,61,61)";
+    document.getElementById("ib"+cnum).style.backgroundColor= "rgb(80,80,80)";
+}
+
 function makeArray(){
-    readFile("https://djindevstuff.github.io/crystals/classpool/cosmic.txt","cosmic");
-    readFile("https://djindevstuff.github.io/crystals/classpool/mutant.txt","mutant");
-    readFile("https://djindevstuff.github.io/crystals/classpool/mystic.txt","mystic");
-    readFile("https://djindevstuff.github.io/crystals/classpool/science.txt","science");
-    readFile("https://djindevstuff.github.io/crystals/classpool/skill.txt","skill");
-    readFile("https://djindevstuff.github.io/crystals/classpool/tech.txt","tech");
+    readFile("https://djindevstuff.github.io/crystals/classpool/skill.txt",1);
+    readFile("https://djindevstuff.github.io/crystals/classpool/mutant.txt",2);
+    readFile("https://djindevstuff.github.io/crystals/classpool/mystic.txt",3);
+    readFile("https://djindevstuff.github.io/crystals/classpool/science.txt",4);
+    readFile("https://djindevstuff.github.io/crystals/classpool/cosmic.txt",5);
+    readFile("https://djindevstuff.github.io/crystals/classpool/tech.txt",6);
 }
 function putchamps(j){
     for(var i=0;i<=j.length-1;i++){
@@ -94,13 +75,13 @@ function clearWindow(){
     document.getElementById("dispChamp").innerHTML="";
     document.getElementById("selectedPool").innerHTML="";
     for(l=0;l<wish_pool.length;l++){
-        document.getElementById("bimage"+wish_pool[l]).style.filter = 'grayscale(0%)';
-        document.getElementById("chimage"+wish_pool[l]).style.filter = 'grayscale(0%)';
+        try {
+            document.getElementById("bimage"+wish_pool[l]).style.filter = 'grayscale(0%)';
+            document.getElementById("chimage"+wish_pool[l]).style.filter = 'grayscale(0%)';
+        }
+        catch{}
     }
     wish_pool=[];
-}
-function addChamp(){
-    document.getElementById("dispChamp").innerHTML=document.getElementById("dispChamp").innerHTML.concat("<img class=\"border\" src=\"../res/frame5.png\" width=\"72px\" height=\"60px\"><img class=\"fivestar\" src=\"../res/Mister_Sinister.png\" width=\"60px\" height=\"60px\"><br>");
 }
 function addtoarray(n){
     if(p<10){
@@ -108,8 +89,8 @@ function addtoarray(n){
         p++;
         console.log("Added "+p);
         document.getElementById("selectedPool").innerHTML= (document.getElementById("selectedPool").innerHTML).concat("<img class=\"border\" src=\"https://djindevstuff.github.io/crystals/featfivepool/frame5.png\" width=\"72px\" height=\"60px\"><img class=\"fivestar\" src=\"https://djindevstuff.github.io/crystals/featfivepool/"+n+".png\" width=\"60px\" height=\"60px\">");
-        document.getElementById("bimage"+n).style.filter = 'grayscale(70%)';
-        document.getElementById("chimage"+n).style.filter = 'grayscale(70%)';
+        document.getElementById("bimage"+n).style.filter = 'grayscale(95%)';
+        document.getElementById("chimage"+n).style.filter = 'grayscale(95%)';
     }
     else{
         console.log("Full")
