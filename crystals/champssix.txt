@@ -4,7 +4,9 @@ Agent Venom
 Air-Walker
 Angela  
 Annihilus  
-Ant-Man  
+Ant-Man
+Apocalypse
+Archangel  
 Beast  
 Bishop  
 Black Bolt  
@@ -22,10 +24,12 @@ Carnage
 Civil Warrior 
 Colossus  
 Corvus Glaive
+Cosmic Ghost Rider
 Cull Obsidian  
 Cyclops(Blue)  
 Cyclops(Red)
-Daredevil(Classic)  
+Daredevil(Classic) 
+Daredevil(Hell's Kitchen) 
 Darkhawk 
 Deadpool(X-Force)  
 Diablo  
@@ -33,7 +37,8 @@ Doctor Doom
 Doctor Octopus  
 Doctor Strange  
 Domino  
-Dormammu  
+Dormammu
+Dragon Man  
 Drax  
 Ebony Maw  
 Electro  
@@ -52,11 +57,13 @@ Guillotine 2099
 Havok  
 Hawkeye  
 Heimdall  
-Hela  
+Hela
+Hit Monkey  
 Howard the Duck  
 Hulk  
 Hulk(Ragnarok)  
-Hulkbuster  
+Hulkbuster 
+Hulk(Immortal) 
 Human Torch  
 Invisible Woman  
 Iron Fist  
@@ -80,6 +87,7 @@ Masacre
 Mephisto  
 Mister Fantastic  
 Mojo
+Mole Man
 Mister Sinister  
 M.O.D.O.K.  
 Moon Knight  
@@ -96,10 +104,12 @@ Nightcrawler
 Old Man Logan  
 Omega Red  
 Phoenix
+Professor X
 Proxima Midnight  
 Psylocke  
 Punisher 2099 
 Red Guardian
+Red Goblin
 Red Hulk  
 Red Skull  
 Rhino  

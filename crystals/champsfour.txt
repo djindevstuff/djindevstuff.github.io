@@ -1,9 +1,12 @@
 Abomination 
+Abomination (Immortal)
 Ægon  
 Agent Venom  
+Air Walker
 Angela  
 Annihilus  
 Ant-Man
+Apcalypse
 Archangel  
 Beast  
 Bishop  
@@ -22,6 +25,7 @@ Captain Marvel
 Captain Marvel(Classic)  
 Carnage
 Civil Warrior 
+Cosmic Ghost Rider
 Colossus  
 Corvus Glaive  
 Crossbones  
@@ -38,6 +42,7 @@ Doctor Strange
 Doctor Voodoo  
 Domino  
 Dormammu
+Dragon Man
 Drax  
 Ebony Maw  
 Electro  
@@ -64,6 +69,7 @@ Howard the Duck
 Hulk
 Hulk(Ragnarok)  
 Hulkbuster  
+Hulk (Immortal)
 Human Torch  
 Hyperion  
 Iceman  
@@ -109,12 +115,14 @@ Nova
 Old Man Logan  
 Omega Red  
 Phoenix
+Professor X
 Proxima Midnight  
 Psylocke  
 Punisher  
 Punisher 2099  
 Quake
 Red Guardian
+Red Goblin
 Red Hulk  
 Red Skull    
 Rocket Raccoon  

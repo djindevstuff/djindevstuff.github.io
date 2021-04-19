@@ -1,9 +1,10 @@
-Abomination 
 Ægon  
-Agent Venom  
+Agent Venom
+Air Walker
 Angela  
 Annihilus  
 Ant-Man
+Apocalypse
 Archangel  
 Beast  
 Bishop  
@@ -22,6 +23,7 @@ Captain Marvel
 Captain Marvel(Classic)  
 Carnage  
 Civil Warrior 
+Cosmic Ghost Rider
 Colossus  
 Corvus Glaive  
 Crossbones  
@@ -36,6 +38,7 @@ Diablo
 Doctor Doom
 Doctor Octopus
 Doctor Voodoo  
+Dragon Man
 Domino  
 Dormammu  
 Drax  
@@ -45,8 +48,7 @@ Elektra
 Elsa Bloodstone
 Emma Frost  
 Falcon  
-Gambit  
-Gamora  
+Gambit
 Ghost  
 Ghost Rider
 Green Goblin  
@@ -64,6 +66,7 @@ Howard the Duck
 Hulk  
 Hulk(Ragnarok)  
 Hulkbuster  
+Hulk (Immortal)
 Human Torch  
 Hyperion  
 Iceman  
@@ -82,8 +85,7 @@ Loki
 Longshot
 Luke Cage
 Magik  
-Magneto(Red)
-Magneto(White)  
+Magneto(Red)  
 Man-Thing
 Masacre  
 Medusa  
@@ -107,6 +109,7 @@ Nova
 Old Man Logan  
 Omega Red  
 Phoenix
+Professor X
 Proxima Midnight  
 Psylocke  
 Punisher 2099  
@@ -134,7 +137,7 @@ Spider-Man(Stealth Suit)
 Spider-Man(Symbiote)  
 Squirrel Girl
 Star-Lord  
-Storm  
+Storm
 Storm(Pyramid X)
 Sunspot  
 Superior Iron Man  
