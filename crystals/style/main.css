@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(61, 61, 61);
+    font-family: "Fira Code";
+    font-size: 20px;
+}
+p{
+    text-align: center;
+    color:rgb(230, 230, 230);
+    background-color: rgb(61, 61, 61) !important;
+}
+h2{
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    color:rgb(250, 157, 18);
+    background-color: rgb(61, 61, 61) !important;
+}
+div{
+    text-align: center;
+}
