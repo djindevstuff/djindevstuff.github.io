@@ -1,4 +1,5 @@
-Ægon  
+Ægon 
+Abomination (Immortal)
 Agent Venom
 Air Walker
 Angela  
@@ -8,24 +9,21 @@ Apocalypse
 Archangel  
 Beast  
 Bishop  
-Black Bolt 
 Black Panther  
 Black Panther(Civil War)  
-Black Widow  
 Black Widow(Claire Voyant)
 Black Widow(Deadly Origin)
 Blade  
 Cable  
 Captain America  
 Captain America(Infinity War)  
-Captain America(WWII)  
 Captain Marvel  
 Captain Marvel(Classic)  
 Carnage  
 Civil Warrior 
-Cosmic Ghost Rider
 Colossus  
 Corvus Glaive  
+Cosmic Ghost Rider
 Crossbones  
 Cull Obsidian  
 Cyclops(Blue)  
@@ -115,6 +113,7 @@ Psylocke
 Punisher 2099  
 Quake  
 Red Guardian
+Red Goblin
 Red Hulk  
 Red Skull  
 Rhino  
@@ -129,7 +128,8 @@ Sentry
 She-Hulk  
 Silver Surfer
 Sorcerer Supreme
-Spider-Gwen  
+Spider-Gwen
+Spider-Ham
 Spider-Man(Classic)  
 Spider-Man(Miles Morales)  
 Spider-Man(Stark Enhanced)  
@@ -154,7 +154,6 @@ Ultron
 Venom  
 Venompool  
 Venom the Duck  
-Vision  
 Vision(Aarkus)   
 Void  
 Vulture   
