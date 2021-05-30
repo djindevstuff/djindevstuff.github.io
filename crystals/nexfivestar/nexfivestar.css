@@ -55,3 +55,17 @@ button:active{
     font-size: 14px;
     color: rgb(206, 206, 206);
 }
+.border{
+    position: relative;
+    left: 0px;
+    margin: 5px;
+}
+.fivestar{
+    transform-origin: 0% 0%;
+    width: 59px;
+    height: 59px;
+    margin: 5px;
+    transform: translateX(-77px) translateY(-7px);
+    position: absolute;
+    z-index: 1;
+}

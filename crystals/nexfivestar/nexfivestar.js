@@ -4,6 +4,9 @@ var champNex=[3];
 var r=[3];
 var res;
 var hist="";
+var cloudinary="https://res.cloudinary.com/dtpybxseq/image/upload/mcoc_pfp/";
+var git="https://djindevstuff.github.io/crystals/";
+
 function readFile(file){
     var f = new XMLHttpRequest();
     f.open("GET", file, true);
@@ -18,7 +21,7 @@ function readFile(file){
     f.send(null);
 }
 function read5Star(){
-    readFile("https://djindevstuff.github.io/crystals/champsfive.txt");
+    readFile(git+"pool/fivestarbasic.txt");
 }
 function randomInt(min,max){
     return Math.floor(Math.random()*(max-min+1))+min;
@@ -43,7 +46,7 @@ function open1Crystal(n){
         hist=document.getElementById("showChamp").innerHTML;
         document.getElementById("showChamp2").innerHTML=hist+"<br>"+document.getElementById("showChamp2").innerHTML;
         getChamp(champ.length-1);
-        document.getElementById("showChamp").innerHTML = "-------------<br>"+champNex[0]+"<br>OR<br>"+champNex[1]+"<br><e>OR</e><br>"+champNex[2];
+        document.getElementById("showChamp").innerHTML = "<img class=\"border\" src=\""+git+"featfivepool/frame5.png\" width=\"72px\" height=\"60px\"><img class=\"fivestar\" src=\""+cloudinary+champNex[0]+"\"><img class=\"border\" src=\""+git+"featfivepool/frame5.png\" width=\"72px\" height=\"60px\"><img class=\"fivestar\" src=\""+cloudinary+champNex[1]+"\"><img class=\"border\" src=\""+git+"featfivepool/frame5.png\" width=\"72px\" height=\"60px\"><img class=\"fivestar\" src=\""+cloudinary+champNex[2]+"\"><br>-------------------";
     }
     document.getElementById("countTotal").innerHTML = totalCount;
 }
