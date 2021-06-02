@@ -59,14 +59,19 @@ button:active{
 .border{
     position: relative;
     left: 0px;
-    margin: 5px;
+    margin: 2px;
+}
+
+@keyframes brighten{
+    0%, 100% {filter: brightness(none);}
+    50% {filter: brightness(10);}
 }
 .fivestar{
     transform-origin: 0% 0%;
     width: 59px;
     height: 59px;
-    margin: 5px;
-    transform: translateX(-77px) translateY(-7px);
+    margin: 2px;
+    transform: translateX(-73px) translateY(-5.6px);
     position: absolute;
     z-index: 1;
 }
