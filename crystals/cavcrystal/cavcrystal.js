@@ -10,25 +10,25 @@ var hist;
 function openCavCrystal(x){
     for(var i=0;i<x;i++){
         n=Math.random();
-        if(n>=0.0 && n<0.002){
+        if(n>=0.0 && n<0.006){
             sixNexCavCount+=1;
         }
-        else if(n>=0.002 && n<0.01){
+        else if(n>=0.006 && n<0.03){
             sixCavCount+=1;
             addchmp=get6Champ(1);
             hist="<six>6* "+addchmp+"</six><br>";
             document.getElementById("showChamp").innerHTML= hist.concat(document.getElementById("showChamp").innerHTML);
         }
-        else if(n>=0.01 && n<0.032){
+        else if(n>=0.03 && n<0.062){
             fiveNexCavCount+=1;
         }
-        else if(n>=0.032 && n<0.12){
+        else if(n>=0.062 && n<0.19){
             fiveCavCount+=1;
             addchmp=get5Champ(1);
             hist="5* "+addchmp+"<br>";
             document.getElementById("showChamp").innerHTML= hist.concat(document.getElementById("showChamp").innerHTML);
         }
-        else if(n>=0.12 && n<0.5){
+        else if(n>=0.19 && n<0.5){
             fourCavCount+=1;
         }
         else{
