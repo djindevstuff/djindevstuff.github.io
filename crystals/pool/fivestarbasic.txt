@@ -139,6 +139,7 @@ squirrel_girl.png
 starlord.png
 storm.png
 storm_pyramid_x.png
+stryfe.png
 sunspot.png
 superior_ironman.png
 symbiote_supreme.png
