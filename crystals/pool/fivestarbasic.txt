@@ -30,7 +30,6 @@ cyclops_blue_team.png
 cyclops_xavier_school.png
 daredevil_netflix.png
 darkhawk.png
-deadpool_x_force.png
 diablo.png
 doctor_octopus.png
 doctor_voodoo.png
@@ -40,7 +39,6 @@ dormammu.png
 dragon_man.png
 drax.png
 ebony_maw.png
-electro.png
 elektra.png
 elsa_bloodstone.png
 emma_frost.png

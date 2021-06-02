@@ -27,11 +27,9 @@ Cosmic Ghost Rider
 Crossbones  
 Cull Obsidian  
 Cyclops(Blue)  
-Cyclops(Red)  
-Daredevil(Classic)  
-Daredevil(Netflix)  
-Darkhawk 
-Deadpool(X-Force)  
+Cyclops(Red)
+Daredevil(Netflix)
+Darkhawk  
 Diablo  
 Doctor Doom
 Doctor Octopus
@@ -40,8 +38,7 @@ Dragon Man
 Domino  
 Dormammu  
 Drax  
-Ebony Maw  
-Electro  
+Ebony Maw
 Elektra  
 Elsa Bloodstone
 Emma Frost  
@@ -72,7 +69,8 @@ Invisible Woman
 Iron Fist  
 Iron Man  
 Iron Man(Infinity War)  
-Iron Patriot  
+Iron Patriot
+Jubilee
 Juggernaut    
 Karnak  
 Killmonger  
@@ -139,6 +137,7 @@ Squirrel Girl
 Star-Lord  
 Storm
 Storm(Pyramid X)
+Stryfe
 Sunspot  
 Superior Iron Man  
 Symbiote Supreme  
