@@ -70,12 +70,10 @@ button:active{
     z-index: 1;
 }
 .dot{
-    height: 27px;
-    width: 27px;
-    margin: 5px;
-    font-size: 16px;
+    padding: 5px;
+    font-size: 14px;
     color: rgb(240, 240, 240);
-    background-color: rgba(75, 75, 75, 0.7);
+    background-color: rgb(46, 46, 46);
     border-radius: 50%;
     border-color: rgb(231, 231, 231);
     display: inline-block;

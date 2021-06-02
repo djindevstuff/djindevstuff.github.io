@@ -13,6 +13,7 @@ h2{
     background-color: rgb(61, 61, 61) !important;
 }
 .pulledChamp{
+    text-align: left;
     color:rgb(230, 230, 230);
     background-color: rgb(61, 61, 61) !important;
     font-size: 22px;
@@ -54,4 +55,31 @@ button:active{
     font-family: "Fira Code";
     font-size: 14px;
     color: rgb(206, 206, 206);
+}
+.border{
+    position: relative;
+    left: 0px;
+    margin: 5px;
+}
+.fivestar{
+    transform-origin: 0% 0%;
+    width: 59px;
+    height: 59px;
+    margin: 5px;
+    transform: translateX(-77px) translateY(-7px);
+    position: absolute;
+    z-index: 1;
+}
+.dot{
+    padding: 5px;
+    font-size: 14px;
+    color: rgb(240, 240, 240);
+    background-color: rgb(46, 46, 46);
+    border-radius: 50%;
+    border-color: rgb(231, 231, 231);
+    display: inline-block;
+    transform-origin: 0% 0%;
+    transform: translateX(-35px) translateY(-10px);
+    position: absolute;
+    z-index: 3;
 }
