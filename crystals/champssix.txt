@@ -12,8 +12,8 @@ Bishop
 Black Bolt  
 Black Panther  
 Black Panther(Civil War)  
-Black Widow  
-Black Widow(Claire Voyant)  
+Black Widow(Claire Voyant)
+Black Widow(Deadly Origin)
 Cable 
 Captain America  
 Captain America(Infinity War)  
@@ -54,6 +54,7 @@ Groot
 Guardian
 Guillotine  
 Guillotine 2099
+Gwenpool
 Havok  
 Hawkeye  
 Heimdall  
@@ -115,11 +116,13 @@ Red Skull
 Rhino  
 Rocket Raccoon  
 Rogue   
+Ronan
 Ronin  
 Sabretooth  
 Sasquatch 
 Sentinel  
 Sentry  
+She-Hulk
 Silver Surfer
 Sorcerer Supreme
 Spider-Gwen  
@@ -147,9 +150,11 @@ Venompool
 Venom the Duck  
 Vision  
 Vision(Aarkus)
+Vision(Age of Ultron)
 Void  
 Vulture  
-Warlock  
+Warlock
+War Machine
 Wasp
 Winter Soldier
 Wolverine(X-23)
