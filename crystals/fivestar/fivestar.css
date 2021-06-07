@@ -12,6 +12,13 @@ h2{
     color:rgb(250, 157, 18);
     background-color: rgb(61, 61, 61) !important;
 }
+hr{
+    background-color: rgb(36, 36, 36);
+    border: 0;
+    height: 2px;
+    width: 90%;
+    margin: 0 auto;
+}
 .pulledChamp{
     text-align: left;
     color:rgb(230, 230, 230);
@@ -60,11 +67,6 @@ button:active{
     position: relative;
     left: 0px;
     margin: 2px;
-}
-
-@keyframes brighten{
-    0%, 100% {filter: brightness(none);}
-    50% {filter: brightness(10);}
 }
 .fivestar{
     transform-origin: 0% 0%;
