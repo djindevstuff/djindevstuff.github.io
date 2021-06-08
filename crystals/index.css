@@ -1,0 +1,115 @@
+body{
+    background-color: rgb(61, 61, 61);
+    font-family: "Fira Code";
+    font-size: 20px;
+}
+h2{
+    margin-top: 40px;
+    font-family: "Fira Code";
+    font-size: 35px;
+    color:rgb(255, 153, 0);
+    text-align: center;
+}
+#button{
+    font-family: "Fira Code";
+    font-size: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color:rgb(250, 157, 18);
+    background-color: rgb(61, 61, 61) !important;
+    border: 0px;
+    outline: none;
+}
+#button:active{
+    transform: scale(0.98);
+}
+a{
+    font-family: "Fira Code";
+    font-size: 30px;
+    margin-bottom: 25px;
+    color:rgb(250, 157, 18);
+    text-decoration: none;
+    
+}
+img{
+	width: 160px;
+	height: 160px;
+	border: 3px solid rgb(190, 190, 190);
+}
+a:active{
+    color:rgb(250, 157, 18);
+}
+a:hover{
+    color:rgb(253, 189, 93);
+}
+.choose{
+	text-align: center;
+}
+.note{
+    text-align: center;
+    font-family: "Fira Code";
+    font-size: 15px;
+    color: rgb(206, 206, 206);
+}
+.hvrbox,
+.hvrbox * {
+	box-sizing: border-box;
+}
+.hvrbox {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	max-width: 100%;
+	height: auto;
+}
+.hvrbox img {
+	max-width: 100%;
+}
+.hvrbox .hvrbox-layer_bottom {
+	display: block;
+}
+.hvrbox .hvrbox-layer_top {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	color:rgb(233, 233, 233);
+	padding: 15px;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+.hvrbox:hover .hvrbox-layer_top,
+.hvrbox.active .hvrbox-layer_top {
+	opacity: 1;
+    transform: scale(1.2);
+}
+.hvrbox .hvrbox-text {
+	text-align: center;
+	font-size: 18px;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.hvrbox .hvrbox-text_mobile {
+	font-size: 15px;
+	border-top: 1px solid rgb(179, 179, 179); /* for old browsers */
+	border-top: 1px solid rgba(179, 179, 179, 0.7);
+	margin-top: 5px;
+	padding-top: 2px;
+	display: none;
+}
+.hvrbox.active .hvrbox-text_mobile {
+	display: block;
+}
