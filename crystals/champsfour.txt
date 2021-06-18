@@ -118,6 +118,7 @@ Phoenix
 Professor X
 Proxima Midnight  
 Psylocke  
+Psycho Man
 Punisher  
 Punisher 2099  
 Quake
@@ -136,7 +137,8 @@ Sentry
 She-Hulk  
 Silver Surfer
 Sorcerer Supreme
-Spider-Gwen  
+Spider-Gwen 
+Spider-Ham 
 Spider-Man(Classic)  
 Spider-Man(Miles Morales)  
 Spider-Man(Stark Enhanced)  

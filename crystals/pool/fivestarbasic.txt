@@ -108,6 +108,7 @@ phoenix.png
 professor_x.png
 proximamidnight.png
 psylocke.png
+psycho_man.png
 punisher_2099.png
 quake.png
 red_goblin.png
