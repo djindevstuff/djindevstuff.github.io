@@ -4,7 +4,7 @@ var nex=[3];
 
 function readjson(level){
     x=level;
-    let requestURL = 'poolinfo.json';
+    let requestURL = 'https://djindevstuff.github.io/crystals/script/poolinfo.json';
     let request = new XMLHttpRequest();
     request.open('GET', requestURL);
     request.responseType = 'json';
