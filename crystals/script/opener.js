@@ -1,10 +1,12 @@
 var champ;
 var x;
 var nex=[3];
+var git="https://djindevstuff.github.io/crystals/";
+
 
 function readjson(level){
     x=level;
-    let requestURL = 'poolinfo.json';
+    let requestURL = git+'poolinfo.json';
     let request = new XMLHttpRequest();
     request.open('GET', requestURL);
     request.responseType = 'json';
