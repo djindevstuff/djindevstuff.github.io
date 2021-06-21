@@ -6,7 +6,7 @@ var git="https://djindevstuff.github.io/crystals/";
 
 function readjson(level){
     x=level;
-    let requestURL = git+'poolinfo.json';
+    let requestURL = git+'script/poolinfo.json';
     let request = new XMLHttpRequest();
     request.open('GET', requestURL);
     request.responseType = 'json';
