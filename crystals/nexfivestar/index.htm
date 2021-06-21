@@ -9,12 +9,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@450&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="nexfivestar.css">
 </head>
-<body onload="read5Star()">
+<body onload="readjson()">
+    <script type="text/javascript" src="..\script\opener.js"></script>
     <script type="text/javascript" src="nexfivestar.js"></script>
     <div class="fiveStar">
         <h2>5* Nexus</h2>
         <p>Total Crystals= <a id="countTotal">0</a></p>
-        <button type="button" id="open1Crystal" onclick="open1Crystal(1)">OPEN 1</button>
+        <button type="button" id="open1Crystal" onclick="openNexFiveCrystal(1)">OPEN 1</button>
         <button type="button" id="clear" onclick="clearWindow()">CLEAR</button>
         <p class="pulledChamp"><a id="showChamp"></a></p>
         <p class="histChamp"><a id=showChamp2></a></p>
