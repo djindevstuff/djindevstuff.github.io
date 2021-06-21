@@ -24,11 +24,17 @@ hr{
     color:rgb(230, 230, 230);
     background-color: rgb(61, 61, 61) !important;
     font-size: 22px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 .histChamp{
     color:rgb(210, 210, 210);
     background-color: rgb(61, 61, 61) !important;
     font-size: 20px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 .fiveStar{
     text-align: center;
