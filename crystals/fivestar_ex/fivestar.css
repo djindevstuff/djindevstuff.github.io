@@ -1,0 +1,133 @@
+body{
+    background-color: rgb(61, 61, 61);
+    font-family: "Fira Code";
+    font-size: 20px;
+}
+html{
+    scroll-behavior: smooth;
+}
+p{
+    color:rgb(230, 230, 230);
+    background-color: rgb(61, 61, 61) !important;
+}
+h2{
+    padding: 2px;
+    color:rgb(250, 157, 18);
+    background-color: rgb(61, 61, 61) !important;
+}
+hr{
+    background-color: rgb(36, 36, 36);
+    border: 0;
+    height: 2px;
+    width: 90%;
+    margin: 0 auto;
+}
+.pulledChamp{
+    display: none;
+    width: auto;
+    height: 240px;
+    text-align: left;
+    padding-top: 10px;
+    color:rgb(230, 230, 230);
+    background-color: rgb(61, 61, 61) !important;
+    font-size: 22px;
+    overflow: auto;
+    scroll-behavior: smooth;
+    text-align: justify;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.histChamp{
+    color:rgb(210, 210, 210);
+    background-color: rgb(61, 61, 61) !important;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.maincont{
+    text-align: center;
+}
+button {        
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: "Fira Code";
+    font-size: 20px;
+    border-color: rgba(0, 0, 0, 0);
+    border: 2px solid;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(206, 206, 206);
+    border-radius: 5px;
+    margin-bottom: 7px;
+    outline: none;
+}
+button:active{
+    transform: scale(0.98);
+    background-color: rgb(105, 105, 105);
+}
+.btn-disabled{
+    cursor: not-allowed;
+    pointer-events: none;
+    color: rgb(129, 129, 129);
+}
+.note{
+    text-align: center;
+    font-family: "Fira Code";
+    font-size: 14px;
+    color: rgb(206, 206, 206);
+}
+.fivestar{
+    width: 59px;
+    height: 59px;
+    position: absolute;
+    bottom: 15px;
+    right: 9px;
+}
+.dot{
+    font-size: 14px;
+    color: rgb(240, 240, 240);
+    background-color: rgb(34, 34, 34);
+    border-radius: 5px;
+    padding: 2px;
+    border-color: rgb(231, 231, 231);
+    position: absolute;
+    bottom: 53px;
+    right: 12px;
+    z-index: 1;
+}
+.highlight{
+    animation-name: brighten;
+    animation-duration: 2s;
+}
+@keyframes brighten{
+    0%   {filter: brightness(300%);}
+    20%  {filter: brightness(200%);}
+    40%  {filter: brightness(300%);}
+    60% {filter: brightness(300%);}
+    80% {filter: brightness(200%);}
+    100% {filter: brightness(100%);}
+}
+.framewithport{
+    position: relative;
+    display: inline;
+    margin: 2px;
+}
+.showpopup:hover .popup{
+    display: inline;
+    opacity: 1;
+}
+.popup{
+    display: none;
+    font-size: 14px;
+    background-color: rgb(34, 34, 34);
+    opacity: 1;
+    padding: 2px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 53px;
+    right: 12px;
+    z-index: 2;
+}
