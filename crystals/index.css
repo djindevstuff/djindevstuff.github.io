@@ -28,20 +28,16 @@ a{
     color:rgb(250, 157, 18);
     text-decoration: none;
 }
+a, a:hover, a:active, a:focus{
+	text-decoration: none;
+	color: transparent;
+	-webkit-tap-highlight-color: transparent;
+}
 img{
 	width: 220px;
 	height: 220px;
 	border: 2px solid rgb(231, 231, 231);
 	margin: 0px;
-}
-a:active{
-    color:rgb(250, 157, 18);
-}
-a:hover{
-    color:rgb(253, 189, 93);
-}
-a:focus{
-	outline: none;
 }
 .choose{
 	text-align: center;
@@ -87,7 +83,6 @@ a:focus{
 .hvrbox:hover .hvrbox-layer_top ,
 .hvrbox.active .hvrbox-layer_top {
 	opacity: 1;
-    transform: scale(1.0);
 	background: rgba(0, 0, 0, 0.8);
 	color:rgb(255, 255, 255);
 }
