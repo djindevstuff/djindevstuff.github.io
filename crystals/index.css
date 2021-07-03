@@ -27,7 +27,7 @@ a{
     margin-bottom: 25px;
     color:rgb(250, 157, 18);
     text-decoration: none;
-    
+    outline: none;
 }
 img{
 	width: 220px;
