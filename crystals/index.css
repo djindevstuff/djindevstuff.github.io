@@ -27,7 +27,6 @@ a{
     margin-bottom: 25px;
     color:rgb(250, 157, 18);
     text-decoration: none;
-    outline: none;
 }
 img{
 	width: 220px;
@@ -40,6 +39,9 @@ a:active{
 }
 a:hover{
     color:rgb(253, 189, 93);
+}
+a:focus{
+	outline: none;
 }
 .choose{
 	text-align: center;
