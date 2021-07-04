@@ -6,7 +6,6 @@ var hist="";
 var curpulls="";
 var cloudinary="https://res.cloudinary.com/dtpybxseq/image/upload/pfp_mcoc/";
 
-
 function openCrystal(n){
     document.getElementsByClassName("pulledChamp")[0].style.display = 'block';
     document.getElementById("showChamp2").innerHTML ="";
@@ -27,7 +26,11 @@ function openCrystal(n){
             //document.getElementById("showChamp").innerHTML ="<img class=\"border\" src=\""+cloudinary+"frame5.png\" width=\"72px\" height=\"60px\"><img class=\"fivestar\" src=\""+cloudinary+champ[r]+"\"><span class=\"dot\" id=\"champ"+r+"\">0</span"+hist;
         }
         if(document.getElementById("x"+champname)== 'undefined' || document.getElementById("x"+champname)== null){
-            document.getElementById("showChamp2").innerHTML=hist2+"<div class=\"framewithport showpopup\"><img class=\"border\" src=\""+cloudinary+"frame5.png\" width=\"72px\" height=\"60px\"><img class=\"fivestar\" src=\""+cloudinary+champname+".png\"><span class=\"popup\" id=\"x"+champname+"\">"+document.getElementById(champname).innerHTML+"</span></div>";
+            document.getElementById("showChamp2").innerHTML=hist2+"<div class=\"framewithport showpopup\"><img class=\"border\" src=\""+cloudinary+"frame5.png\" width=\"72px\" height=\"60px\"><img class=\"fivestar\" id=\"i"+champname+"\" src=\""+cloudinary+champname+".png\"><span class=\"popup\" id=\"x"+champname+"\">"+document.getElementById(champname).innerHTML+"</span></div>";
+        }
+        else{
+            //document.getElementById("i"+champname).classList.add("dupe");
+            document.getElementById("x"+champname).innerHTML=document.getElementById(""+champname).innerHTML;
         }
         hist2="";
         //document.getElementById("showChamp2").innerHTML+="<div class=\"framewithport showpopup\"><img class=\"border\" src=\""+cloudinary+"frame5.png\" width=\"72px\" height=\"60px\"><img class=\"fivestar\" src=\""+cloudinary+champname+".png\"><span class=\"popup\">"+document.getElementById(champname).innerHTML+"</span></div>";
@@ -42,33 +45,4 @@ function clearWindow(){
     document.getElementById("showChamp").innerHTML="";
     document.getElementById("showChamp2").innerHTML="";
     document.getElementsByClassName("pulledChamp")[0].style.display = 'none';
-}
-var id=null;
-var preele='undefined';
-function highlight(elid){
-    if(preele!='undefined'){
-        preele.style.filter = 'brightness(100%)';
-    }
-    //console.log(elid.getAttribute('id'));
-    //document.getElementById(elid.getAttribute('id')+"i").style.filter='brightness(150%)';
-    var elem = document.getElementById(elid.getAttribute('id')+"i");
-    preele=elem;
-    elem.scrollIntoView(top);
-    elem.setAttribute("class", "highlight");
-    setTimeout(function (){
-        elem.setAttribute("class", "ani");
-    }, 2000);
-    //clearInterval(id);
-    //var bri=100;
-    //id = setInterval(frame, 15);
-    //function frame() {
-    //if (bri == 200) {
-    //    clearInterval(id);
-    //    elem.style.filter = 'brightness(100%)';
-    //}
-    //else {
-    //    bri++; 
-    //    elem.style.filter = 'brightness('+bri+'%)'; 
-    //    //elem.style.left = pos + 'px'; 
-    //}
 }

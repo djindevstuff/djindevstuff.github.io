@@ -3,9 +3,6 @@ body{
     font-family: "Fira Code";
     font-size: 20px;
 }
-html{
-    scroll-behavior: smooth;
-}
 p{
     color:rgb(230, 230, 230);
     background-color: rgb(61, 61, 61) !important;
@@ -22,6 +19,15 @@ hr{
     width: 90%;
     margin: 0 auto;
 }
+/* Hide scrollbar for Chrome, Safari and Opera */
+.pulledChamp::-webkit-scrollbar {
+    display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.pulledChamp {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 .pulledChamp{
     display: none;
     width: auto;
@@ -31,7 +37,7 @@ hr{
     color:rgb(230, 230, 230);
     background-color: rgb(61, 61, 61) !important;
     font-size: 22px;
-    overflow: auto;
+    overflow: scroll;
     scroll-behavior: smooth;
     text-align: justify;
     -webkit-user-select: none;
@@ -98,18 +104,6 @@ button:active{
     right: 12px;
     z-index: 1;
 }
-.highlight{
-    animation-name: brighten;
-    animation-duration: 2s;
-}
-@keyframes brighten{
-    0%   {filter: brightness(300%);}
-    20%  {filter: brightness(200%);}
-    40%  {filter: brightness(300%);}
-    60% {filter: brightness(300%);}
-    80% {filter: brightness(200%);}
-    100% {filter: brightness(100%);}
-}
 .framewithport{
     position: relative;
     display: inline;
@@ -117,17 +111,18 @@ button:active{
 }
 .showpopup:hover .popup{
     display: inline;
-    opacity: 1;
 }
 .popup{
     display: none;
     font-size: 14px;
     background-color: rgb(34, 34, 34);
-    opacity: 1;
     padding: 2px;
     border-radius: 5px;
     position: absolute;
     bottom: 53px;
     right: 12px;
     z-index: 2;
+}
+.dupe{
+    background-color: rgb(0, 0, 255);
 }
