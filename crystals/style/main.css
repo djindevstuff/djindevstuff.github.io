@@ -1,21 +1,63 @@
 body{
     background-color: rgb(61, 61, 61);
-    font-family: "Fira Code";
     font-size: 20px;
+    font-family: 'Fira Code', sans-serif;
+}
+h2{
+    margin-top: 10px;
+    font-size: 35px;
+    color:rgb(255, 153, 0);
+    text-align: center;
 }
 p{
-    text-align: center;
     color:rgb(230, 230, 230);
     background-color: rgb(61, 61, 61) !important;
 }
-h2{
-    padding-left: 70px;
-    padding-right: 70px;
-    padding-bottom: 25px;
-    padding-top: 25px;
-    color:rgb(250, 157, 18);
-    background-color: rgb(61, 61, 61) !important;
-}
-div{
+.note{
     text-align: center;
+    font-size: 14px;
+    color: rgb(206, 206, 206);
+}
+.stats{
+    font-size: 20px;
+    color: rgb(206, 206, 206);
+}
+button{        
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: "Fira Code",monospace;
+    font-size: 20px;
+    border-color: rgba(0, 0, 0, 0);
+    border: 2px solid;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(206, 206, 206);
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    outline: none;
+}
+button:active{
+    transform: scale(0.98);
+    background-color: rgb(105, 105, 105);
+}
+.main_container{
+    text-align: center;
+}
+.framewithport{
+    position: relative;
+    display: inline;
+    margin: 2px;
+}
+.border{
+    width: 72px;
+    height: 60px;
+}
+.head_image{
+    width: 59px;
+    height: 59px;
+    position: absolute;
+    bottom: 13.2px;
+    left: 6px;
 }

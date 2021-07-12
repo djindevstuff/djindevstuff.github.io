@@ -2,6 +2,7 @@ var champ;
 var x;
 var nex=[3];
 var git="https://djindevstuff.github.io/crystals/";
+var cloudinary="https://res.cloudinary.com/dtpybxseq/image/upload/pfp_mcoc/";
 
 
 function readjson(level){
@@ -57,4 +58,10 @@ function get3NexSixChamp(){
     getChamp(champ['sixstarbasicpool'].length-1);
     var nexpool=[champ['sixstarbasicpool'][nex[0]], champ['sixstarbasicpool'][nex[1]],champ['sixstarbasicpool'][nex[2]]];
     return nexpool;
+}
+function getStructure(frametype, champid){
+    return ("<div class=\"framewithport\"><img class=\"border\" src=\""+cloudinary+"frame"+frametype+".png\"><img class=\"head_image\" src=\""+cloudinary+champid+".png\"></div>")
+}
+function getNexusStructure(frametype, champid){
+    return ("<div class=\"framewithport\"><img class=\"border\" src=\""+cloudinary+"frame"+frametype+".png\"><img class=\"head_image\" src=\""+cloudinary+champid[0]+".png\"></div><div class=\"framewithport\"><img class=\"border\" src=\""+cloudinary+"frame"+frametype+".png\"><img class=\"head_image\" src=\""+cloudinary+champid[1]+".png\"></div><div class=\"framewithport\"><img class=\"border\" src=\""+cloudinary+"frame"+frametype+".png\"><img class=\"head_image\" src=\""+cloudinary+champid[2]+".png\"></div>")
 }

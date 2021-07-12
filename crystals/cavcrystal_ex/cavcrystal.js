@@ -18,22 +18,26 @@ function openCavCrystal(x){
         if(n>=0.0 && n<0.006){
             sixNexCavCount+=1;
             var nexpoolsix = get3NexSixChamp();
-            document.getElementById("showChamp").innerHTML ="<img class=\"border\" src=\""+cloudinary+"frame6.png\" width=\"72px\" height=\"60px\"><img class=\"fivestar\" src=\""+cloudinary+nexpoolsix[0]+".png\"><img class=\"border\" src=\""+cloudinary+"frame6.png\" width=\"72px\" height=\"60px\"><img class=\"fivestar\" src=\""+cloudinary+nexpoolsix[1]+".png\"><img class=\"border\" src=\""+cloudinary+"frame6.png\" width=\"72px\" height=\"60px\"><img class=\"fivestar\" src=\""+cloudinary+nexpoolsix[2]+".png\"><br>"+document.getElementById("showChamp").innerHTML;
+            //document.getElementById("showChamp").innerHTML ="<div class=\"framewithport\"><img class=\"border\" src=\""+cloudinary+"frame6.png\"><img class=\"head_image\" src=\""+cloudinary+nexpoolsix[0]+".png\"><img class=\"border\" src=\""+cloudinary+"frame6.png\"><img class=\"head_image\" src=\""+cloudinary+nexpoolsix[1]+".png\"><img class=\"border\" src=\""+cloudinary+"frame6.png\"><img class=\"head_image\" src=\""+cloudinary+nexpoolsix[2]+".png\"></div><br>"+document.getElementById("showChamp").innerHTML;
+            document.getElementById("showChamp").innerHTML =getNexusStructure(6,nexpoolsix)+"<br>"+document.getElementById("showChamp").innerHTML;
         }
         else if(n>=0.006 && n<0.03){
             sixCavCount+=1;
             var sixchamp = getSixStarChamp();
-            document.getElementById("showChamp").innerHTML="<img class=\"border\" src=\""+cloudinary+"frame6.png\" width=\"72px\" height=\"60px\"><img class=\"fivestar\" src=\""+cloudinary+sixchamp+".png\"><br>"+document.getElementById("showChamp").innerHTML;
+            //document.getElementById("showChamp").innerHTML="<img class=\"border\" src=\""+cloudinary+"frame6.png\" width=\"72px\" height=\"60px\"><img class=\"head_image\" src=\""+cloudinary+sixchamp+".png\"><br>"+document.getElementById("showChamp").innerHTML;
+            document.getElementById("showChamp").innerHTML= getStructure(6,sixchamp)+"<br>"+document.getElementById("showChamp").innerHTML;
         }
         else if(n>=0.03 && n<0.062){
             fiveNexCavCount+=1;
             var nexpoolsix = get3NexFiveChamp();
-            document.getElementById("showChamp").innerHTML ="<img class=\"border\" src=\""+cloudinary+"frame5.png\" width=\"72px\" height=\"60px\"><img class=\"fivestar\" src=\""+cloudinary+nexpoolsix[0]+".png\"><img class=\"border\" src=\""+cloudinary+"frame5.png\" width=\"72px\" height=\"60px\"><img class=\"fivestar\" src=\""+cloudinary+nexpoolsix[1]+".png\"><img class=\"border\" src=\""+cloudinary+"frame5.png\" width=\"72px\" height=\"60px\"><img class=\"fivestar\" src=\""+cloudinary+nexpoolsix[2]+".png\"><br>"+document.getElementById("showChamp").innerHTML;
+            document.getElementById("showChamp").innerHTML= getNexusStructure(5,nexpoolsix)+"<br>"+document.getElementById("showChamp").innerHTML;
+            //document.getElementById("showChamp").innerHTML ="<img class=\"border\" src=\""+cloudinary+"frame5.png\" width=\"72px\" height=\"60px\"><img class=\"head_image\" src=\""+cloudinary+nexpoolsix[0]+".png\"><img class=\"border\" src=\""+cloudinary+"frame5.png\" width=\"72px\" height=\"60px\"><img class=\"fivestar\" src=\""+cloudinary+nexpoolsix[1]+".png\"><img class=\"border\" src=\""+cloudinary+"frame5.png\" width=\"72px\" height=\"60px\"><img class=\"fivestar\" src=\""+cloudinary+nexpoolsix[2]+".png\"><br>"+document.getElementById("showChamp").innerHTML;
         }
         else if(n>=0.062 && n<0.19){
             fiveCavCount+=1;
             var fivechamp = getFiveStarChamp()
-            document.getElementById("showChamp").innerHTML="<img class=\"border\" src=\""+cloudinary+"frame5.png\" width=\"72px\" height=\"60px\"><img class=\"fivestar\" src=\""+cloudinary+fivechamp+".png\"><br>"+document.getElementById("showChamp").innerHTML;
+            document.getElementById("showChamp").innerHTML= getStructure(5,fivechamp)+"<br>"+document.getElementById("showChamp").innerHTML;
+            //document.getElementById("showChamp").innerHTML="<img class=\"border\" src=\""+cloudinary+"frame5.png\" width=\"72px\" height=\"60px\"><img class=\"head_image\" src=\""+cloudinary+fivechamp+".png\"><br>"+document.getElementById("showChamp").innerHTML;
         }
         else if(n>=0.19 && n<0.5){
             fourCavCount+=1;

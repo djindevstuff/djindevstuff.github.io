@@ -8,27 +8,28 @@
     <link rel="perconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@450&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="cavcrystal.css">
+    <link rel="stylesheet" href="../style/main.css">
 </head>
 <body onload="readjson()">
     <script type="text/javascript" src="..\script\opener.js"></script>
     <script type="text/javascript" src="cavcrystal.js"></script>
-    <div class="cavalier">
+    <div class="main_container">
         <h2>Cavalier Crystal</h2>
-        <p>Total Crystals= <a id="countCavTotal">0</a></p>
-        <p>3 Stars= <a id="countCavThree">0</a></p>
-        <p>4 Stars= <a id="countCavFour">0</a></p>
-        <p>5 Stars= <a id="countCavFive">0</a></p>
-        <p>6 Stars= <a id="countCavSix">0</a></p>
-        <p>5 Star Nexus= <a id="countCavFiveNex">0</a></p>
-        <p>6 Star Nexus= <a id="countCavSixNex">0</a></p>
+        <div class="stats">
+            Total Crystals= <a id="countCavTotal">0</a><br>
+            3 Stars= <a id="countCavThree">0</a><br>
+            4 Stars= <a id="countCavFour">0</a><br>
+            5 Stars= <a id="countCavFive">0</a><br>
+            6 Stars= <a id="countCavSix">0</a><br>
+            5 Star Nexus= <a id="countCavFiveNex">0</a><br>
+            6 Star Nexus= <a id="countCavSixNex">0</a><br>
+        </div>
         <button type="button" id="openCrystal" onclick="openCavCrystal(1)">OPEN 1</button>
         <button type="button" id="openCrystal" onclick="openCavCrystal(10)">OPEN 10</button>
         <button type="button" id="openCrystal" onclick="openCavCrystal(50)">OPEN 50</button>
         <button type="button" id="clear" onclick="clearWindow()">CLEAR</button>
-        <div class="champArea">
-            <p><a id="showChamp"></a></p>
-            <p class="note"><b>NOTE:</b> This MCOC Crystal Simulator is made just for fun.<br>This does not represent your next possible pull in the game.</p>
-        </div>
+        <div class="champArea" id="showChamp"></div>
+        <p class="note"><b>NOTE:</b> This MCOC Crystal Simulator is made just for fun.<br>This does not represent your next possible pull in the game.</p>
     </div>
 </body>
 </html>
